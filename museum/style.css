@@ -1,0 +1,317 @@
+:root {
+  --bg-dark: #030303;
+  --dark-red: #710707;
+  --font-gold: #9d8665;
+  --font1: 80px;
+  --font2: 32px;
+  --font3: 28px;
+}
+@font-face {
+  font-family: forum;
+   src: url("assets/fonts/Forum-Regular.ttf");}
+   @font-face {
+    font-family: robotothin;
+    src: url("assets/fonts/Roboto-Thin.ttf");
+    font-weight: 100;
+  }
+  @font-face {
+    font-family: robotoregular;
+    src: url("assets/fonts/Roboto-Regular.ttf");
+    font-weight: 300;
+  }
+ 
+ 
+ 
+
+*{font-family: robotoregular;}
+h3{font-family: robotoregular;}
+
+
+
+
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: calc(100% - 40px);}
+
+
+
+
+/*.header{background: var(--bg-dark);}*/
+
+
+
+
+.header{ height: 50px;} 
+
+
+.header-container {
+  
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  /* Далее мы определим каким образом будет распределено оставшееся место */
+  justify-content: space-around;
+  padding-left: 20px;
+  padding-top: 100px;
+}
+
+.logo-container {background:url("assets/svg/logo.svg") left no-repeat; width: 170px; height: 28px; 
+  ;}
+
+
+
+
+h1{font: 28px forum;color: white;text-align: right;text-transform: uppercase;margin: auto;}
+
+.main-menu{display: flex; max-width: 720px;justify-content: flex-end; gap: 50px;}
+
+
+
+.menu-container{width: 720;  /* Неважно */
+  height: 50px; /* Неважно */
+  margin: auto; 
+
+}
+
+  
+
+
+
+
+
+
+li{list-style: none;
+  font: 22px robotothin;
+  
+}
+a{text-decoration: none;
+  color: white;}
+
+
+
+
+.welcome-section{background: url("assets/img/Welcome.jpg") right no-repeat;
+  background-size:  1215px 750px; 
+  height: 750px;
+  background-position: calc(50%+352) 100%; 
+  overflow: hidden;
+}
+
+.dark-section{
+    background-color: var(--bg-dark);}
+  
+.section-title {font:var(--font1) forum; color: var(--font-gold); text-transform: uppercase; }
+.dark-title {color: white;}
+
+.welcome-paragraf {font:var(--font3) robotoregular; color: white;}
+
+.discover-button {font: robotothin 22px; background: var(--dark-red); color: white; padding: 20px; text-align: center; border: none; display: inline-block; border-radius: 8px;}
+
+
+.welcome-container{padding-top: 200px;}
+
+
+
+
+
+h3 {color: #000000;font-family: forum;font-style: normal;font-weight: normal;font-size: 32px;line-height: 35px;letter-spacing: 5px;
+  }
+  
+.card-paragraf {color: #000000;font-family: Robotohin;font-style: normal;font-weight: 200px;font-size: 22px;line-height: 26px;
+  }  
+  
+
+.cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      max-width: 1440px;}
+.card{display: block;}
+  #explore{display: flex;}
+
+  span{color: var(--font-gold);
+  }
+
+
+
+
+.tickets-container{
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: space-around;
+  gap: 10px;
+  max-width: 1440px;
+  padding-bottom: 50px;
+  padding-right: 50px;
+}
+
+
+.ticket-type{width: 270px; height: 262px ;color: white;
+  display: flex;
+  flex-flow:column wrap; }
+
+
+
+
+
+
+/* The container */
+.radio-button {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font: 22px robotothin;
+  color: white;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio-button input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-button:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-button input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-button input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-button .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+
+.number-element{color:white;}
+.amount-paragraf{
+  font: 22px robotothin;
+  color: white;}
+
+.amount-paragraf2{
+  font: 28px robotoregular;
+  color: white;
+  font-weight: bold;}
+
+.amount-button{font: 22px robotothin;}
+
+  .white-text{color:white;}
+
+
+
+
+
+
+#explore{padding: 80px 50px;}
+
+
+
+
+
+
+
+
+
+.input-tikets{background-color: #000000;
+    border-color:white;
+    color: #FFFFFF;
+    text-align: center ;
+    }
+.button-tiskets1{
+    background-color: #000000;
+    border-color:#000000;
+    color: #FFFFFF;
+    }
+.button-tiskets2{
+    background-color: #000000;
+    border-color:#000000;
+    color: #FFFFFF;
+}
+  .button-buy{
+    background-color: #FFFFFF;
+    border-radius: 4px;
+  }
+
+
+
+/*Contacts*/
+.contacts-container{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+  
+  max-width: 1440px;}
+
+.text-contacts{width: 282px; height: 221px;}
+.map-image{max-width: 960px; }
+
+
+
+
+
+  /*footer*/
+  .footer{background: var(--bg-dark);}
+
+
+
+
+  .footer{ height: 300px;} 
+  
+  
+  .footer-container {
+    
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    /* Далее мы определим каким образом будет распределено оставшееся место */
+    justify-content: space-between;
+    padding: 80px 20px ;
+  }
+  .footer-menu-container{width: 366;  /* Неважно */
+    height: 150px;  padding: auto;/* Неважно */
+     }
+  /*.footer-social-container{;}*/
+  .footer-menu{display: flex; width: 366px; height: 150px; justify-content: space-around; gap: 20px;flex-flow: column wrap;}
+  .footer-social{align-self: flex-end; display: flex; width: 366px; height: 48px; justify-content: space-around; gap: 20px;flex-flow: row wrap;}
+
