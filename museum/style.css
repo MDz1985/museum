@@ -139,13 +139,17 @@ h3 {color: #000000;font-family: forum;font-style: normal;font-weight: normal;fon
 .tickets-container{
   display: flex;
   flex-flow:row wrap;
+  justify-content: space-around;
   gap: 10px;
-  max-width: 1440px;}
+  max-width: 1440px;
+  padding-bottom: 50px;
+  padding-right: 50px;
+}
 
 
 .ticket-type{width: 270px; height: 262px ;color: white;
   display: flex;
-  flex-flow:column wrap; border: 1px rebeccapurple;}
+  flex-flow:column wrap; border: 5px white;}
 
 
 
@@ -218,9 +222,19 @@ h3 {color: #000000;font-family: forum;font-style: normal;font-weight: normal;fon
 }
 
 
+.number-element{color:white;}
+.amount-paragraf{
+  font: 22px robotothin;
+  color: white;}
 
+.amount-paragraf2{
+  font: 28px robotoregular;
+  color: white;
+  font-weight: bold;}
 
-.white-text{color:white;}
+.amount-button{font: 22px robotothin;}
+
+  .white-text{color:white;}
 
 
 
