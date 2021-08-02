@@ -21,7 +21,7 @@
   }
  
  
-section{border: 1px solid red};   
+ 
 
 *{font-family: robotoregular;}
 h3{font-family: robotoregular;}
@@ -57,7 +57,7 @@ h3{font-family: robotoregular;}
   padding-top: 100px;
 }
 
-.logo-container {background:url("assets/svg/logo.svg") left no-repeat;border: 1px solid red; width: 170px; height: 28px; 
+.logo-container {background:url("assets/svg/logo.svg") left no-repeat; width: 170px; height: 28px; 
   ;}
 
 
@@ -69,7 +69,7 @@ h1{font: 28px forum;color: white;text-align: right;text-transform: uppercase;mar
 
 
 
-.menu-container{border: 1px solid yellow;width: 720;  /* Неважно */
+.menu-container{width: 720;  /* Неважно */
   height: 50px; /* Неважно */
   margin: auto; 
 
@@ -131,7 +131,8 @@ h3 {color: #000000;font-family: forum;font-style: normal;font-weight: normal;fon
 .card{display: block;}
   #explore{display: flex;}
 
-  span{color: var(--font-gold);}
+  span{color: var(--font-gold);
+  }
 
 
 
@@ -149,7 +150,7 @@ h3 {color: #000000;font-family: forum;font-style: normal;font-weight: normal;fon
 
 .ticket-type{width: 270px; height: 262px ;color: white;
   display: flex;
-  flex-flow:column wrap; border: 5px white;}
+  flex-flow:column wrap; }
 
 
 
@@ -282,8 +283,8 @@ h3 {color: #000000;font-family: forum;font-style: normal;font-weight: normal;fon
   
   max-width: 1440px;}
 
-.text-contacts{width: 282px; height: 221px;border: 1px solid yellow;}
-.map-image{max-width: 960px; border: 1px solid yellow;}
+.text-contacts{width: 282px; height: 221px;}
+.map-image{max-width: 960px; }
 
 
 
@@ -295,7 +296,7 @@ h3 {color: #000000;font-family: forum;font-style: normal;font-weight: normal;fon
 
 
 
-  .footer{ height: 300px;border: 1px solid red;} 
+  .footer{ height: 300px;} 
   
   
   .footer-container {
@@ -307,10 +308,10 @@ h3 {color: #000000;font-family: forum;font-style: normal;font-weight: normal;fon
     justify-content: space-between;
     padding: 80px 20px ;
   }
-  .footer-menu-container{border: 1px solid yellow;width: 366;  /* Неважно */
+  .footer-menu-container{width: 366;  /* Неважно */
     height: 150px;  padding: auto;/* Неважно */
      }
   /*.footer-social-container{;}*/
   .footer-menu{display: flex; width: 366px; height: 150px; justify-content: space-around; gap: 20px;flex-flow: column wrap;}
-  .footer-social{align-self: flex-end;border: 1px solid yellow;display: flex; width: 366px; height: 48px; justify-content: space-around; gap: 20px;flex-flow: row wrap;}
+  .footer-social{align-self: flex-end; display: flex; width: 366px; height: 48px; justify-content: space-around; gap: 20px;flex-flow: row wrap;}
 
