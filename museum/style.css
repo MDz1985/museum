@@ -132,14 +132,14 @@ h3 {color: #000000;font-family: forum;font-style: normal;font-weight: normal;fon
 .explore-container{
   display: flex;
   flex-flow:row wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   
   max-width: 1440px;
-  padding-bottom: 50px;
+  padding: 50px 0px;
   
 }
 
-.explore-text-container{width: 550px;}
+.explore-text-container{width: 590px;}
 
 span{color: var(--font-gold);
   }
