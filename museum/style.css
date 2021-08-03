@@ -64,7 +64,7 @@ h3{font-family: robotoregular;}
 
 
 h1{font: 28px forum;color: white;text-align: right;text-transform: uppercase;margin: auto;}
-
+h5{font: 28px forum;color: white;text-align: right;text-transform: uppercase;margin: auto;}
 .main-menu{display: flex; max-width: 720px;justify-content: flex-end; gap: 50px;}
 
 
