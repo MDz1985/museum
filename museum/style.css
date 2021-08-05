@@ -41,6 +41,10 @@ a{text-decoration: none;
   letter-spacing: 2px;
   color: white;
 }
+a:hover {
+  transition: all 0.1s linear;
+  color: var(--font-gold);
+}
 
 h1, h5{font: 28px forum;color: white;text-transform: uppercase;font-size: 28px;line-height: 50px;letter-spacing: 5px;}
 
@@ -68,7 +72,7 @@ header{
   flex-flow: row wrap;
   align-items: center;
   /* Далее мы определим каким образом будет распределено оставшееся место */
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .logo-container {
