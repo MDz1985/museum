@@ -123,9 +123,18 @@ header{
 .section-title {font-size:var(--font1); font-family: forum; color: var(--font-gold); text-transform: uppercase; font-weight: normal; line-height: 90px; letter-spacing: 5px;}
 .dark-title {color: white;}
 
-.welcome-paragraf {font-size:var(--font3); font-family: robotoregular; color: white;}
+.welcome-paragraf {font-size:var(--font3); font-family: robotothin; color: white; line-height: 33px; letter-spacing: 2px; font-weight: 300px;
+  margin-bottom: 76px;
+  margin-top: -40px;
+}
 
-.discover-button {font-size: 22px; font-family: robotothin; background: var(--dark-red); color: white; padding: 20px; text-align: center; border: none; display: inline-block; border-radius: 8px;}
+.discover-button {
+  font-size: 22px; font-family: robotothin; line-height: 26px; letter-spacing: 2px;
+  background: var(--dark-red); color: white; padding: 20px; text-align: center; border: none; display: inline-block; 
+  border-radius: 10px;
+  width: 360px;
+  height: 75px;
+}
 
 
 .welcome-container{
