@@ -64,8 +64,9 @@ Header
 
 header{
   background: var(--bg-dark);
-  padding: 74px 0px 76px 0;
+  padding: 60px 0px 55px 0;
   color: #fff;
+  
 } 
 
 
@@ -85,6 +86,7 @@ header{
   flex-direction: row-reverse;
   align-items: center;
   width: 195px;
+  height: 50px;
 }
 
 
@@ -118,7 +120,7 @@ header{
 .dark-section{
     background-color: var(--bg-dark);}
   
-.section-title {font-size:var(--font1); font-family: forum; color: var(--font-gold); text-transform: uppercase; }
+.section-title {font-size:var(--font1); font-family: forum; color: var(--font-gold); text-transform: uppercase; font-weight: normal; line-height: 90px; letter-spacing: 5px;}
 .dark-title {color: white;}
 
 .welcome-paragraf {font-size:var(--font3); font-family: robotoregular; color: white;}
@@ -132,7 +134,7 @@ position: absolute;
 width: 598px;
 height: 390px;
 left: 240px;
-top: 114px;
+top: 50px;
   
   
 }
