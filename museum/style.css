@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  margin: -8px;
 }
 
 :root {
@@ -26,22 +27,26 @@ html {
 }
  
  
- 
+body{margin: 0;}
 
-*{font-family: robotoregular;}
+*{
+  font-family: robotoregular;
+  ;
+}
+
 h3{font-family: robotoregular;}
 
 li{list-style: none;
 }
 
-a{text-decoration: none;
+a {text-decoration: none;
   font: 22px robotothin;
   text-transform: uppercase;
   line-height: 50px;
   letter-spacing: 2px;
   color: white;
 }
-a:hover {
+li a:hover {
   transition: all 0.1s linear;
   color: var(--font-gold);
 }
@@ -83,13 +88,6 @@ header{
   width: 195px;
 }
 
-
-
-
-
-  
-
-
 .menu-container{
   width: 720px;
   margin: auto; 
@@ -113,9 +111,11 @@ header{
 
 
 .welcome-section{background: url("assets/img/Welcome.jpg") right no-repeat;
-  background-size:  1215px 750px; 
+   position: relative;
+  width: 100%;
   height: 750px;
-    /*background-position: calc(50%+352px) 100px; */
+  background-position: -240 114px;
+  /*;calc(500%+352px) 100%;*/
   overflow: hidden;
 }
 
@@ -130,10 +130,21 @@ header{
 .discover-button {font-size: 22px; font-family: robotothin; background: var(--dark-red); color: white; padding: 20px; text-align: center; border: none; display: inline-block; border-radius: 8px;}
 
 
-.welcome-container{padding-top: 200px;}
+.welcome-container{
+  
+position: absolute;
+width: 598px;
+height: 390px;
+left: 240px;
+top: 114px;
+  
+  
+}
 
 
-
+/*
+VISITING
+*/
 
 
 h3 {color: #000000;font-family: forum;font-style: normal;font-weight: normal;font-size: 32px;line-height: 35px;letter-spacing: 5px;
