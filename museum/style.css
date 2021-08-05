@@ -32,12 +32,17 @@ html {
 h3{font-family: robotoregular;}
 
 li{list-style: none;
-  font: 22px robotothin;
 }
 
 a{text-decoration: none;
+  font: 22px robotothin;
+  text-transform: uppercase;
+  line-height: 50px;
+  letter-spacing: 2px;
   color: white;
 }
+
+h1, h5{font: 28px forum;color: white;text-transform: uppercase;font-size: 28px;line-height: 50px;letter-spacing: 5px;}
 
 .container {
   margin: 0 auto;
@@ -77,20 +82,20 @@ header{
 
 
 
-h1, h5{font: 28px forum;color: white;text-transform: uppercase;font-size: 28px;line-height: 50px;letter-spacing: 5px;}
+
   
 
 
-.main-menu{display: flex; max-width: 720px;justify-content: flex-end; gap: 50px;}
-
-
-
-.menu-container{width: 720px;  /* Неважно */
-  height: 50px; /* Неважно */
+.menu-container{
+  width: 720px;
   margin: auto; 
-
 }
 
+.menu-container ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
   
 
 
