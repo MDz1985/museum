@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --bg-dark: #030303;
   --dark-red: #710707;
@@ -8,17 +12,18 @@
 }
 @font-face {
   font-family: forum;
-   src: url("assets/fonts/Forum-Regular.ttf");}
-   @font-face {
-    font-family: robotothin;
-    src: url("assets/fonts/Roboto-Thin.ttf");
-    font-weight: 100;
-  }
-  @font-face {
-    font-family: robotoregular;
-    src: url("assets/fonts/Roboto-Regular.ttf");
-    font-weight: 300;
-  }
+  src: url("assets/fonts/Forum-Regular.ttf");
+}
+@font-face {
+  font-family: robotothin;
+  src: url("assets/fonts/Roboto-Thin.ttf");
+  font-weight: 100;
+}
+@font-face {
+  font-family: robotoregular;
+  src: url("assets/fonts/Roboto-Regular.ttf");
+  font-weight: 300;
+}
  
  
  
@@ -33,17 +38,17 @@ h3{font-family: robotoregular;}
 .container {
   margin: 0 auto;
   max-width: 1440px;
-  width: calc(100% - 40px);}
+  width: calc(100% - 40px);
+}
 
 
 
 
-/*.header{background: var(--bg-dark);}*/
-
-
-
-
-.header{ height: 50px;} 
+header{
+  background: var(--bg-dark);
+  padding: 74px 0px 76px 0;
+  color: #fff;
+} 
 
 
 .header-container {
@@ -69,7 +74,7 @@ h5{font: 28px forum;color: white;text-align: right;text-transform: uppercase;mar
 
 
 
-.menu-container{width: 720;  /* Неважно */
+.menu-container{width: 720px;  /* Неважно */
   height: 50px; /* Неважно */
   margin: auto; 
 
@@ -95,19 +100,19 @@ a{text-decoration: none;
 .welcome-section{background: url("assets/img/Welcome.jpg") right no-repeat;
   background-size:  1215px 750px; 
   height: 750px;
-  background-position: calc(50%+352) 100%; 
+    /*background-position: calc(50%+352px) 100px; */
   overflow: hidden;
 }
 
 .dark-section{
     background-color: var(--bg-dark);}
   
-.section-title {font:var(--font1) forum; color: var(--font-gold); text-transform: uppercase; }
+.section-title {font-size:var(--font1); font-family: forum; color: var(--font-gold); text-transform: uppercase; }
 .dark-title {color: white;}
 
-.welcome-paragraf {font:var(--font3) robotoregular; color: white;}
+.welcome-paragraf {font-size:var(--font3); font-family: robotoregular; color: white;}
 
-.discover-button {font: robotothin 22px; background: var(--dark-red); color: white; padding: 20px; text-align: center; border: none; display: inline-block; border-radius: 8px;}
+.discover-button {font-size: 22px; font-family: robotothin; background: var(--dark-red); color: white; padding: 20px; text-align: center; border: none; display: inline-block; border-radius: 8px;}
 
 
 .welcome-container{padding-top: 200px;}
@@ -119,7 +124,7 @@ a{text-decoration: none;
 h3 {color: #000000;font-family: forum;font-style: normal;font-weight: normal;font-size: 32px;line-height: 35px;letter-spacing: 5px;
   text-transform: uppercase;}
   
-.card-paragraf {color: #000000;font-family: Robotothin;font-style: normal;font-weight: 200px;font-size: 22px;line-height: 26px;
+.card-paragraf {color: #000000;font-family: Robotothin;font-style: normal;font-weight: 200;font-size: 22px;line-height: 26px;
   }  
   
 
@@ -129,13 +134,14 @@ h3 {color: #000000;font-family: forum;font-style: normal;font-weight: normal;fon
       gap: 10px;
       max-width: 1440px;}
 .card{display: block;}
+
 .explore-container{
   display: flex;
   flex-flow:row wrap;
   justify-content: space-around;
   
   max-width: 1440px;
-  padding: 50px 0px;
+  padding-bottom: 50px;
   
 }
 
@@ -261,11 +267,11 @@ span{color: var(--font-gold);
 
 
 
-
+/*
 .input-tikets{background-color: #000000;
     border-color:white;
     color: #FFFFFF;
-    text-align: center ;
+    
     }
 .button-tiskets1{
     background-color: #000000;
@@ -281,7 +287,7 @@ span{color: var(--font-gold);
     background-color: #FFFFFF;
     border-radius: 4px;
   }
-
+*/
 
 
 /*Contacts*/
@@ -318,8 +324,8 @@ span{color: var(--font-gold);
     justify-content: space-between;
     padding: 80px 20px ;
   }
-  .footer-menu-container{width: 366;  /* Неважно */
-    height: 150px;  padding: auto;/* Неважно */
+  .footer-menu-container{width: 366px;  /* Неважно */
+    height: 150px;/* Неважно */
      }
   /*.footer-social-container{;}*/
   .footer-menu{display: flex; width: 366px; height: 150px; justify-content: space-around; gap: 20px;flex-flow: column wrap;}
