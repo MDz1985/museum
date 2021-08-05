@@ -1,6 +1,5 @@
 html {
   scroll-behavior: smooth;
-  margin: -8px;
 }
 
 :root {
@@ -41,7 +40,6 @@ li{list-style: none;
 
 a {text-decoration: none;
   font: 22px robotothin;
-  text-transform: uppercase;
   line-height: 50px;
   letter-spacing: 2px;
   color: white;
@@ -78,6 +76,7 @@ header{
   align-items: center;
   /* Далее мы определим каким образом будет распределено оставшееся место */
   justify-content: space-between;
+  max-width: 1440px;
 }
 
 .logo-container {
@@ -88,12 +87,9 @@ header{
   width: 195px;
 }
 
-.menu-container{
-  width: 720px;
-  margin: auto; 
-}
 
 .menu-container ul{
+  width: 720px;
   display: flex;
   justify-content: space-between;
   align-items: center;
