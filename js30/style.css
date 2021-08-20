@@ -1,0 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+  
+:root {
+    --yellow: linear-gradient(200deg,#ffb777, #ffa777);
+    --grey: linear-gradient(200deg, #252E33, #1e2529);
+    --blue: linear-gradient(200deg, #2A86BA, #2575a3);
+    --pink: linear-gradient(200deg, #FD3555, #dd2947);;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
