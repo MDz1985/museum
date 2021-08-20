@@ -11,3 +11,44 @@ html {
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+body {
+    height: 100vh;
+}
+
+h1 {font-size: 40px;}
+
+.container {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.leftsection {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.leftsection > div {
+    background: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+.firstSolid {
+    background: var(--yellow);
+}
+.secondSolid {
+    background: var(--grey);
+}
+.thirdSolid {
+    background: var(--blue);
+}
+.foursSolid {
+    background: var(--pink);
+}
+
+
