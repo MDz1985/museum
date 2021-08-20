@@ -13,6 +13,7 @@ html {
 
 body {
     height: 100vh;
+    color: white;
 }
 
 h1 {font-size: 40px;}
@@ -28,12 +29,15 @@ h1 {font-size: 40px;}
     position: absolute;
     top: 0;
     left: 0;
+    height: 100%;
+    width: 40%;
 }
 
 .leftsection > div {
-    background: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     width: 100%;
 }
@@ -49,6 +53,22 @@ h1 {font-size: 40px;}
 }
 .foursSolid {
     background: var(--pink);
+}
+
+.rightSection {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    height: 100%;
+    width: 60%;
+}
+
+.rightSection > div{
+    background: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
 }
 
 
