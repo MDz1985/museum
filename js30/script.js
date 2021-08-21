@@ -23,3 +23,5 @@ leftSection.insertBefore(clonelastLeft,leftSection.lastChild);
 
 rightSection.style.top = '-100vh';
 leftSection.style.top = -slidesCount * 100 + 'vh';
+
+
