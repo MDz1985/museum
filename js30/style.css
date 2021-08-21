@@ -3,10 +3,10 @@ html {
 }
   
 :root {
-    --yellow: linear-gradient(200deg,#ffb777, #ffa777);
-    --grey: linear-gradient(200deg, #252E33, #1e2529);
-    --blue: linear-gradient(200deg, #2A86BA, #2575a3);
-    --pink: linear-gradient(200deg, #FD3555, #dd2947);;
+    --fire: linear-gradient(200deg,rgb(255,96,0),rgb(255, 236, 63));
+    --earth: linear-gradient(200deg, rgb(24,23,17), rgb(80, 61, 38));
+    --air: linear-gradient(200deg, rgb(14, 56, 63), rgb(71, 177, 196));
+    --water: linear-gradient(200deg, rgb(27, 39, 27), rgb(114,111,59));;
 }
 
 * {
@@ -19,9 +19,11 @@ body {
     height: 100vh;
     font-family: 'Roboto', sans-serif;
     color: white;
+    font-size: 16px;
 }
 
 h1 {font-size: 40px;}
+p {padding: 20px 5px 0px 5px;}
 
 .container {
     position: relative;
@@ -48,16 +50,16 @@ h1 {font-size: 40px;}
 }
 
 .firstSolid {
-    background: var(--yellow);
+    background: var(--earth);
 }
 .secondSolid {
-    background: var(--grey);
+    background: var(--fire);
 }
 .thirdSolid {
-    background: var(--blue);
+    background: var(--air);
 }
 .foursSolid {
-    background: var(--pink);
+    background: var(--water);
 }
 
 .rightSection {
@@ -77,16 +79,16 @@ h1 {font-size: 40px;}
 }
 
 .firstSlide {
-    background-image: url('https://images.unsplash.com/photo-1593885430587-30d64e7e04a2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1348&q=80');
+    background-image: url('https://images.unsplash.com/photo-1492496913980-501348b61469?ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MjR8bEZ1VWt4d0lPN3d8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=60');
 }
 .secondSlide {
-    background-image: url('https://images.unsplash.com/photo-1593885430587-30d64e7e04a2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1348&q=80');
+    background-image: url('https://images.unsplash.com/photo-1543005472-1b1d37fa4eae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1268&q=80');
 }
 .thirdSlide {
-    background-image: url('https://images.unsplash.com/photo-1593885430587-30d64e7e04a2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1348&q=80');
+    background-image: url('https://images.unsplash.com/photo-1520985244272-9d0b8067a4ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXx3bkhMUDduSnVTUXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=1400&q=60');
 }
 .fourthSlide {
-    background-image: url('https://images.unsplash.com/photo-1593885430587-30d64e7e04a2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1348&q=80');
+    background-image: url('https://images.unsplash.com/photo-1526352393350-d58abf5b6f4e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1802&q=80');
 }
 
 button {
@@ -95,7 +97,6 @@ button {
     padding: 15px;
     background-color: white;
     color: rgb(173, 173, 173);
-    font-size: 16px;
     cursor: pointer;
     border: none;
 }
@@ -105,7 +106,7 @@ button:hover {
 }
 
 .upButton {
-    top: 43.6%;
+    top: calc(50% - 43px);
     left: 35%;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -113,7 +114,7 @@ button:hover {
 
 .downButton{
     top: 50%;
-    left: 31.95%;
+    left: calc(35% - 40px);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
