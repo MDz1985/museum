@@ -9,10 +9,15 @@ html {
     --pink: linear-gradient(200deg, #FD3555, #dd2947);;
 }
 
+* {
+    margin: 0; padding: 0;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 body {
     height: 100vh;
+    font-family: 'Roboto', sans-serif;
     color: white;
 }
 
@@ -20,20 +25,20 @@ h1 {font-size: 40px;}
 
 .container {
     position: relative;
-    overflow: hidden;
+/*    overflow: hidden; */
     height: 100vh;
     width: 100vw;
 }
 
-.leftsection {
+.leftSection {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
-    width: 40%;
+    width: 35%;
 }
 
-.leftsection > div {
+.leftSection > div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,21 +63,21 @@ h1 {font-size: 40px;}
 .rightSection {
     position: absolute;
     top: 0;
-    left: 40%;
+    left: 35%;
     height: 100%;
-    width: 60%;
+    width: 65%;
 }
 
 .rightSection > div{
-    background: no-repeat;
+    background-position: center center; 
     background-size: cover;
-    background-position: center center;
+    background-repeat: no-repeat;
     height: 100%;
     width: 100%;
 }
 
 .firstSlide {
-    background-image: url('');
+    background-image: url('https://images.unsplash.com/photo-1593885430587-30d64e7e04a2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1348&q=80');
 }
 .secondSlide {
     background-image: url('');
@@ -84,3 +89,30 @@ h1 {font-size: 40px;}
     background-image: url('');
 }
 
+button {
+    position: absolute;
+    z-index: 50;
+    padding: 15px;
+    background-color: white;
+    color: rgb(173, 173, 173);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: rgb(17, 17, 17);
+}
+
+.upButton {
+    top: 43.6%;
+    left: 35%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.downButton{
+    top: 50%;
+    left: 31.95%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
