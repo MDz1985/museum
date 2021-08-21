@@ -21,4 +21,5 @@ let lastLeft = leftSection.children[1];
 let clonelastLeft = lastLeft.cloneNode(true);  //copy of the first left slide 
 leftSection.insertBefore(clonelastLeft,leftSection.lastChild);
 
-
+rightSection.style.top = '-100vh';
+leftSection.style.top = -slidesCount * 100 + 'vh';
