@@ -38,6 +38,7 @@ p {padding: 20px 45px 0px 5px;}
     left: 0;
     height: 100%;
     width: 35%;
+    transition: transform 500ms ease-in-out;
 }
 
 .leftSection > div {
@@ -68,6 +69,7 @@ p {padding: 20px 45px 0px 5px;}
     left: 35%;
     height: 100%;
     width: 65%;
+    transition: transform 500ms ease-in-out;
 }
 
 .rightSection > div{

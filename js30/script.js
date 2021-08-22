@@ -2,8 +2,10 @@ const leftSection = document.querySelector('.leftSection');
 const rightSection = document.querySelector('.rightSection');
 const upButton = document.querySelector('.upButton');
 const downButton = document.querySelector('.downButton');
+//const container = document.querySelector('.container')
 
 const slidesCount = rightSection.children.length;
+let timer = true;
 
 let firstRight = rightSection.children[0];
 let cloneFirstRight = firstRight.cloneNode(true);  //copy of the first right slide 
@@ -28,7 +30,7 @@ let slideIndex = 0;
 
 upButton.addEventListener('click', () =>{
     if (timer == true) { 
-        changeSlide('up')
+        listSlide('up');
       
         timer = false; 
         timeOut();   
@@ -37,14 +39,50 @@ upButton.addEventListener('click', () =>{
 
 downButton.addEventListener('click', () =>{
     if (timer == true) { 
-        changeSlide('down')
+        listSlide('down');
         
         timer = false; 
         timeOut();   
         }
 })
 
+function listSlide(direction) {
+    if (direction === 'up') {
+        slideIndex++;
+
+        if (slideIndex % slidesCount === 0 ) {
+            rightSection.style.top = `${(slideIndex-1) * 100}vh`; //+300 +700
+            if (slideIndex < 0)    {
+                leftSection.style.top = `${Math.abs(slideIndex) * 100-400}vh`; //(-4,-8) 0 400
+            } else {
+                leftSection.style.top = `-${(slideIndex+4) * 100}vh`; //-800
+            }
+        }
+    } else if (direction === 'down') {
+        slideIndex--;
+
+        if (slideIndex < 0 && (slideIndex-3) % slidesCount ===0) {
+            //        alert(slideIndex + '<0')  
+            leftSection.style.top = `${Math.abs(slideIndex+1) * 100}vh`; //(-1,-5,-9) 0 400 800
+            rightSection.style.top = `${(slideIndex - slidesCount) * 100}vh` //-100 300 700 1100
+        } else if ((slideIndex > 0) && (slideIndex+1) % slidesCount  === 0) {
+             //       alert(slideIndex)  
+            rightSection.style.top = `${(slideIndex - slidesCount) * 100}vh`; //3 7 11  -100 -500
+            leftSection.style.top = `-${(slideIndex+1) * 100}vh`; //3 7 11  
+        } 
+    }
+    
+    const height = document.querySelector('.container').clientHeight;
+
+    if (slideIndex < 0) {
+        rightSection.style.transform = `translateY(${Math.abs(slideIndex) * height}px)`;
+        leftSection.style.transform = `translateY(${slideIndex * height}px)`;    
+    } else{
+        rightSection.style.transform = `translateY(-${slideIndex * height}px)`;
+        leftSection.style.transform = `translateY(${slideIndex * height}px)`;    
+    }
+}
 
 function timeOut() {
-    setTimeout(function() {timer = true;}, 500)
+    setTimeout(function() {timer = true;}, 500);
 }
