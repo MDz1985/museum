@@ -24,4 +24,27 @@ leftSection.insertBefore(clonelastLeft,leftSection.lastChild);
 rightSection.style.top = '-100vh';
 leftSection.style.top = -slidesCount * 100 + 'vh';
 
+let slideIndex = 0;
 
+upButton.addEventListener('click', () =>{
+    if (timer == true) { 
+        changeSlide('up')
+      
+        timer = false; 
+        timeOut();   
+        }
+})
+
+downButton.addEventListener('click', () =>{
+    if (timer == true) { 
+        changeSlide('down')
+        
+        timer = false; 
+        timeOut();   
+        }
+})
+
+
+function timeOut() {
+    setTimeout(function() {timer = true;}, 500)
+}
