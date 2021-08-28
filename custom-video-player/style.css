@@ -24,13 +24,16 @@ body {
 
 .player {
   max-width: 1440px;
+  height: 714 px;
   border: none;
   position: relative;
   overflow: hidden;
+  top: -30px;
   
 }
 
 .video {
+  position: relative;
   width: 100%;
 }
 
@@ -41,18 +44,46 @@ button {
 
 .central {
   position:relative;
-  max-width: 220px;
-  background-color: black;
+  width: 10%;
+  height: 100%;
+  background-color: transparent;
+  top: 424px;
+  left: calc(50% - 110px);
+  z-index: 10;
+  
 }
 
 .centralButton {
-  width: 100%;
+  border: none;
+  
 }
 
 .controls {
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
+  height: 85px;
   width: 100%;
   background-color: black;
+  margin-top: -89px;
+  z-index: 5;
+}
+
+.progressSlider {
+  max-width: 820px;
+  
+  display: flex;
+  flex-basis: 100%;
+
+  transition: height 0.3s;
+  background: rgba(0,0,0,0.5);
+  cursor: ew-resize;
+}
+
+.progressSlider__filled {
+  width: 50%;
+  background: #ffc600;
+  flex: 0;
+  flex-basis: 50%;
 }
