@@ -6,7 +6,7 @@ const playButton = player.querySelector('.playButton');
 const playCentral = player.querySelector('.central');
 const backButton = player.querySelector('.backButton');
 const fowardButton = player.querySelector('.forwardButton');
-
+const volumeSlider = player.querySelector('.volumeSlider')
 
 
 //PLAY
@@ -31,11 +31,17 @@ fowardButton.addEventListener('click', forward);
 
 //PROGRESS
 function progressFunc() {
-    
-
-    //const percent = (video.currentTime / video.duration) * 100;
-    //console.log(percent);
   progressBar.style.flexBasis = `${(video.currentTime / video.duration) * 100}%`;
-  }
+}
 video.addEventListener('timeupdate', progressFunc);
+
+//VOLUME BUTTON
+
+
+//VOLUME
+function levelChange() {
+    video.volume = this.value;
+}
+volumeSlider.addEventListener('change', levelChange);
+volumeSlider.addEventListener('mousemove', levelChange);
 
