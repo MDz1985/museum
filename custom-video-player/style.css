@@ -62,7 +62,7 @@ button {
   position: relative;
   display: flex;
   flex-wrap: nowrap;
-  padding-left: 20px;
+  
   justify-content:space-evenly;
   height: 85px;
   width: 100%;
@@ -84,7 +84,7 @@ button {
   cursor: ew-resize;
 }
 
-.progressSlider__filled {
+.progress_filled {
   width: 50%;
   background: #ffc600;
   flex: 0;
