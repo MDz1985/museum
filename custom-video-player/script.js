@@ -1,6 +1,7 @@
 const player = document.querySelector('.player');
 const video = player.querySelector('.video');
-const progressSlider = player.querySelector('progressSlider');
+const progressBar = player.querySelector('.progress_filled');
+const progress =player.querySelector('.progress')
 const playButton = player.querySelector('.playButton');
 const playCentral = player.querySelector('.central');
 const backButton = player.querySelector('.backButton');
@@ -27,4 +28,14 @@ function forward() {
 }
 backButton.addEventListener('click', back);
 fowardButton.addEventListener('click', forward);
+
+//PROGRESS
+function progressFunc() {
+    
+
+    //const percent = (video.currentTime / video.duration) * 100;
+    //console.log(percent);
+  progressBar.style.flexBasis = `${(video.currentTime / video.duration) * 100}%`;
+  }
+video.addEventListener('timeupdate', progressFunc);
 
