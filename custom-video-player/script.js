@@ -3,7 +3,8 @@ const video = player.querySelector('.video');
 const progressSlider = player.querySelector('progressSlider');
 const playButton = player.querySelector('.playButton');
 const playCentral = player.querySelector('.central');
-
+const backButton = player.querySelector('.backButton');
+const fowardButton = player.querySelector('.forwardButton');
 
 
 
@@ -15,4 +16,15 @@ function play() {
    else {playCentral.style.zIndex = '0';}
 }
 playButton.addEventListener('click', play);
-playCentral.addEventListener('click', play)
+playCentral.addEventListener('click', play);
+
+//BACK & FORWARD
+function back() {
+    video.currentTime -= 2;
+}
+function forward() {
+    video.currentTime += 2;
+}
+backButton.addEventListener('click', back);
+fowardButton.addEventListener('click', forward);
+
