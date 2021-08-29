@@ -12,17 +12,20 @@ const volumeIcon = document.getElementById('volumeIcon')
 const playIcon = document.getElementById('playIcon')
 
 
+     
 //PLAY
 function play() {
     const method = video.paused ? 'play' : 'pause';
     video[method]();
+    
     if (video.paused){
         playCentral.style.zIndex = '10';
         playIcon.src = 'svg/play.svg';
+
     }
-   else {
+    else {
        playCentral.style.zIndex = '0';
-       playIcon.src = 'svg/PAUSE.svg';
+       playIcon.src = 'svg/pause.svg';
     }
 }
 playButton.addEventListener('click', play);
@@ -41,6 +44,9 @@ fowardButton.addEventListener('click', forward);
 //PROGRESS
 function progressFunc() {
   progressBar.style.flexBasis = `${(video.currentTime / video.duration) * 100}%`;
+  if (video.currentTime === video.duration) {
+    playIcon.src = 'svg/play.svg'; 
+}
 }
 video.addEventListener('timeupdate', progressFunc);
 
