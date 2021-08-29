@@ -98,6 +98,11 @@ button {
 }
 
 
+.volumeButton{
+  position: relative;
+  top: 12%;
+}
+
 input[type=range] {
   -webkit-appearance: none;
   background: transparent;
