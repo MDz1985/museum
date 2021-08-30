@@ -71,3 +71,18 @@ function levelChange() {
 volumeSlider.addEventListener('change', levelChange);
 volumeSlider.addEventListener('mousemove', levelChange);
 
+
+//KEYBOARD
+function keyboard(e){
+    
+    e.preventDefault() 
+    
+    switch (e.keyCode){
+        case 32:
+            play()
+            break;
+    }
+    
+} 
+
+window.addEventListener("keydown", keyboard);
