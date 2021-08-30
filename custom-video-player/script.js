@@ -31,6 +31,7 @@ function play() {
 }
 playButton.addEventListener('click', play);
 playCentral.addEventListener('click', play);
+video.addEventListener('click', play);
 
 //BACK & FORWARD
 function back() {
@@ -49,7 +50,12 @@ function progressFunc() {
     playIcon.src = 'svg/play.svg'; 
 }
 }
+function move(e) {
+    video.currentTime = (e.offsetX / progress.offsetWidth) * video.duration;
+}
+
 video.addEventListener('timeupdate', progressFunc);
+progress.addEventListener('click', move);
 
 //VOLUME BUTTON
 function noVolume() {
@@ -165,3 +171,5 @@ function keyboard(e){
     
 }
 window.addEventListener("keydown", keyboard);
+
+console.log ('30/30: реализован функционал плеера, добавлены обязательные клавиши управления с клавиатуры, а также 13 клавиш YouTube: j,k,l,0,1,2,3,4,5,6,7,8,9')
