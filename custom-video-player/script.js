@@ -79,10 +79,23 @@ function keyboard(e){
     
     switch (e.keyCode){
         case 32:
-            play()
+            play();
+            break
+        case 77:
+            noVolume();
             break;
+        case 75:
+            play();
+            break;
+            
+            
+        case 74:
+            back();
+            break;
+        
+            
+
     }
     
-} 
-
+}
 window.addEventListener("keydown", keyboard);
