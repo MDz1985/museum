@@ -75,30 +75,29 @@ volumeSlider.addEventListener('mousemove', levelChange);
 //FULLSCREEN
 //player.webkitRequestFullscreen(); 
 
-function fullscreen (e){
+function fullscreen (){
    
-    if(e.requestFullscreen) {
-        console.log('a');
-      e.requestFullscreen();
-    } else if(e.webkitRequestFullscreen) {
-        console.log('b');
-      e.webkitRequestFullscreen();
-    } else if(e.mozRequestFullscreen) {
-        console.log('c');
-      e.mozRequestFullScreen();
-    } else {
-    console.log ('d');}
+    if(video.requestFullscreen) {
+        //console.log('a');
+      video.requestFullscreen();
+    } else if(video.webkitRequestFullscreen) {
+        //console.log('b');
+      video.webkitRequestFullscreen();
+    } else if(video.mozRequestFullscreen) {
+        //console.log('c');
+      video.mozRequestFullScreen();
+    } 
     
 }
-    
    
-fullScreenButton.addEventListener('click', video.requestFullscreen)
+   
+fullScreenButton.addEventListener('click', fullscreen);
 //fullScreenButton.addEventListener('click', fullscreen(video.src))
 
 //KEYBOARD
 function keyboard(e){
     
-    e.preventDefault() 
+    e.preventDefault() //default disable
     
     switch (e.keyCode){
         case 32: //' '
@@ -117,8 +116,8 @@ function keyboard(e){
             back();
             break;
         case 70:  //f
-            console.log('f')
-            video.src.webkitRequestFullscreen;
+            //console.log('f')
+            fullscreen ();
             break;
         case 190: //>
             if (event.shiftKey && video.playbackRate < 2) {
