@@ -91,7 +91,16 @@ volumeSlider.addEventListener('mousemove', levelChange);
 //player.webkitRequestFullscreen(); 
 
 function fullscreen (){
-   
+    if (document.webkitFullscreenElement && document.webkitFullscreenElement.nodeName == 'VIDEO') {
+        video.webkitExitFullScreen();
+    }else if (document.fullscreenElement && document.fullscreenElement.nodeName == 'VIDEO') {
+        video.exitFullScreen();
+    }else if (document.mozFullscreenElement && document.mozFullscreenElement.nodeName == 'VIDEO') {
+        video.mozExitFullScreen();
+    
+
+
+   }else{
     if(video.requestFullscreen) {
         //console.log('a');
       video.requestFullscreen();
@@ -102,6 +111,7 @@ function fullscreen (){
         //console.log('c');
       video.mozRequestFullScreen();
     } 
+}
     
 }
    
