@@ -57,12 +57,21 @@ function move(e) {
 video.addEventListener('timeupdate', progressFunc);
 progress.addEventListener('click', move);
 
+let prevSlider, prevVolume;
 //VOLUME BUTTON
 function noVolume() {
-
+if (video.volume > 0){
+    prevSlider = volumeSlider.value;
+    prevVolume = video.volume;
     video.volume = 0;
     volumeSlider.value = 0;
-    volumeIcon.src = 'svg/novolume.svg'
+    volumeIcon.src = 'svg/novolume.svg';
+} else {
+    volumeSlider.value = prevSlider;
+    video.volume = prevVolume;
+    volumeIcon.src = 'svg/volume.svg'
+}
+    
 }
 volumeButton.addEventListener('click', noVolume)
 //VOLUME
