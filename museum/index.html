@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>museum</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/welcome.css"> -->
+    <link rel="icon" href="assets/favicon.png" type="image/png">
     
 </head>
 <body>
@@ -17,11 +19,12 @@
                     <h1>Louvre</h1>
                 </a>
             </div>
-            <nav class="menu-container">                                                           <!-- Меню -->
-                <ul class=main-menu>
+            <nav class="menu-container">                                                     <!-- Меню -->
+                <ul class="main-menu">
                     <li><a href="#visiting">Visiting</a></li>
                     <li><a href="#explore">Explore</a></li>
                     <li><a href="#video">Video</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#tickets">Tickets</a></li>
                     <li><a href="#contacts">Contacts</a></li>
                 </ul>
@@ -29,16 +32,33 @@
         </div>
     </header>
     <main class = "main">
-        <section class="section dark-section welcome-section">              <!--WELCOME-->
+        <section class="section dark-section welcome-section">                              <!--WELCOME-->
             <div class="container welcome-container">
-                <h2 class="section-title dark-title">
-                    Welcome <br>to the Louvre
-                </h2>
-                <p class=welcome-paragraf>From the castle to the museum</p>
-                <button class="discover-button">Discover the Louvre</button>
+                <div class="welcome-slide-container">
+                    <div class="welcome-slide">
+
+                    </div>
+                </div>
+                
+                <div class="welcome-left">
+                    <h2 class="section-title dark-title">
+                        Welcome <br>to the Louvre
+                    </h2>
+                    <p class=welcome-paragraf>From the castle to the museum</p>
+                    <button class="discover-button">Discover the Louvre</button>
+                </div>
             </div>
-        </section>                                  
-        <section class="section visiting-section" id="visiting">              <!--WISITING-->
+            <div class="container welcome-panel-container">
+                <div class="slide-panel">
+                    <div>
+                        <p style="color: aliceblue;">01 | 05</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>  
+
+        <section class="section visiting-section" id="visiting">                            <!--WISITING-->
             <div class="container">
                 <h2 class="section-title border-title">
                     Virtual tour
@@ -50,33 +70,33 @@
                         <img src="assets/img/1RoyalPalace.jpg" alt="Royal Palace" width="440" height="285">
                         <h3>Royal Palace</h3>
                         <p class="card-paragraf">360° Virtual Tour</p>
-                        <p class="card-paragraf">Google Street Panorama View</p>
+                        <p class="card-paragraf2">Google Street Panorama View</p>
                     </a>
                     <a href="#" class="card">
                         <img src="assets/img/2DenonWing.jpg" alt="Denon Wing" width="440" height="285">
                         <h3>Denon Wing</h3>
                         <p class="card-paragraf">360° Virtual Tour</p>
-                        <p class="card-paragraf">Google Street Panorama View</p>
+                        <p class="card-paragraf2">Google Street Panorama View</p>
                     </a>
                     <a href="#" class="card">
                         <img src="assets/img/3ColonnadePerrault.jpg" alt="Colonnade Perrault" width="440" height="285">
                         <h3>Colonnade Perrault</h3>
                         <p class="card-paragraf">360° Virtual Tour</p>
-                        <p class="card-paragraf">Google Street Panorama View</p>
+                        <p class="card-paragraf2">Google Street Panorama View</p>
                     </a>
                     <a href="#" class="card">
                         <img src="assets/img/4GreekHall.jpg" alt="Greek Hall" width="440" height="285">
                         <h3>Greec Hall</h3>
                         <p class="card-paragraf">360° Virtual Tour</p>
-                        <p class="card-paragraf">Google Street Panorama View</p>
+                        <p class="card-paragraf2">Google Street Panorama View</p>
                     </a>
-                    <a href="#">
+                    <a href="#" class="card">
                         <img src="assets/img/5MonaLisa.jpg" alt="Mona Lisa" width="440" height="285">
                         <h3>Mona Lisa</h3>
                         <p class="card-paragraf">360° Virtual Tour</p>
-                        <p class="card-paragraf">Google Street Panorama View</p>
+                        <p class="card-paragraf2">Google Street Panorama View</p>
                     </a>
-                    <a href="#">
+                    <a href="#" class="card">
                         <img src="assets/img/6NightPalace.jpg" alt="NightPalace" width="440" height="285">
                         <h3>Night Palace</h3>
                         <p class="card-paragraf">360° Virtual Tour</p>
@@ -85,7 +105,8 @@
                 </div>
             </div>
         </section>
-        <section class="section dark-section" id="explore">              <!--EXPLORE-->
+
+        <section class="section dark-section explore-section" id="explore">                 <!--EXPLORE-->
             <div class="explore-container">
                 <div class="explore-text-container">
                     <h2 class="section-title dark-title border-title">
@@ -115,7 +136,8 @@
 
             </div>
         </section>
-        <section class="section video-section" id="video">             <!--VIDEO-->
+
+        <section class="section video-section" id="video">                                  <!--VIDEO-->
             <div class="container">
                 <h2 class="section-title ">
                     Video journey
@@ -128,9 +150,22 @@
 
             </div>
         </section>
-        <section class="section dark-section" id="tickets">              <!--TICKETS-->
+
+        <section class="section dark-section gallery-section" id="gallery">                 <!--GALLERY-->
             <div class="container">
-                <h2 class="section-title dark-title border-title">
+                <h2 class="section-title dark-title">
+                    Art Gallery
+                </h2>
+                
+
+
+
+            </div>
+        </section>
+
+        <section class="section tickets-section" id="tickets">                              <!--TICKETS-->
+            <div class="container">
+                <h2 class="section-title border-title">
                     Buy tickets
                 </h2>
 
@@ -204,7 +239,11 @@
 
             </div>
         </section>
-        <section class="section contacts-section" id="contacts">          <!--CONTACTS-->
+
+        <section class="section paralax-section" >                                          <!--PARALAX-->
+        </section>
+
+        <section class="section contacts-section" id="contacts">                            <!--CONTACTS-->
             <div class="container">
                 <h2 class="section-title border-title">
                     Contacts
@@ -233,7 +272,7 @@
             </div>
         </section>
     </main>
-    <footer class = "footer">                               <!--FOOTER-->
+    <footer class = "footer">                                                               <!--FOOTER-->
         <div  class = "footer-container">
             <div class="logo-container">
                 <a class="logo" href="#" target="blank">
