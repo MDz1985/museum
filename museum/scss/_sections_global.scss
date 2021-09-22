@@ -1,0 +1,17 @@
+/* SECTIONS GLOBAL */
+.section{
+    width: 100vw;
+  }
+  
+  .container {
+    align-self: center;
+    margin: 0 auto;
+    max-width: 1440px;
+    width: calc(100% - 40px);
+  }
+  
+  .dark-section{
+      background-color: var(--bg-dark);}
+    
+  .section-title {font-size:var(--font1); font-family: 'Forum'; color: var(--font-gold); text-transform: uppercase; font-weight: normal; line-height: 90px; letter-spacing: 5px;}
+  .dark-title {color: white;}

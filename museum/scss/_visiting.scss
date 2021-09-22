@@ -1,0 +1,89 @@
+
+/*VISITING*/
+.visiting-section{
+    height: 1266px;
+    padding: 75px 0;
+} 
+  
+.cards-container {
+    position: relative;
+    margin-top: 103px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 75px 60px;
+}
+  
+.card{
+    display: block;
+    height: 424px;
+    width: 440px;
+}
+  
+h3 {
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 22px;
+    color: #000000;
+    font-family: "Forum";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+h3::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0px;
+    right: 140px;
+    height: 2px;
+    background-color: var(--dark-red);
+}
+
+.border-title{
+    position: relative;
+}
+
+.border-title::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0px;
+    right: 0px;
+    height: 3px;
+    background-color: var(--dark-red);
+}
+
+.card p{
+    margin-top: 10px;
+    color: #000000;
+    font-family: "Roboto";
+    font-weight: 100;
+    letter-spacing: normal;   
+}
+
+.card-paragraf {
+    font-size: 22px;
+    line-height: 26px;
+}  
+  
+.card-paragraf2 {
+    font-size: 18px;
+    line-height: 21px;
+}  
+  
+
+
+  
+
+
+  
+  
+  
+ 
+
+  
+  
