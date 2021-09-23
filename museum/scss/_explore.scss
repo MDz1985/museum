@@ -38,15 +38,27 @@
 
 
 .explore-img-container{
+    position: relative;
     margin-top: 15px;
     height: 700px;
     width: 720px;
     background: url("../assets/explore-slider/after.jpg");
-    img{
+    #lasMeninas{
         object-position: left;
         object-fit: cover;
         width: 440px;
     }
+    
+    #slider{
+        height: 100%;
+    }
+}
+
+.explore-img-container::after{
+    content: url("../assets/explore-slider/explore\ slider.png");
+    position: absolute;
+    bottom: -3px;
+    left: 440-19.5px;
 }
 
 span{color: var(--font-gold);

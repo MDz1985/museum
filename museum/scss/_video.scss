@@ -1,0 +1,21 @@
+.video-section{
+    height: 1396px;
+    padding: 75px 0;
+}
+
+.video-text{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    div{
+        width: 720px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 38px;
+        letter-spacing: 0.15px;
+    }
+}

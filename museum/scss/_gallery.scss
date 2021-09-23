@@ -1,0 +1,20 @@
+.gallery-section{
+    height: 2200px;
+    padding-top: 75px;
+    overflow: hidden;
+    object-position: top;
+}
+
+.art-container{
+    // overflow: hidden;
+    margin-top: 75px;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    div{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+}
