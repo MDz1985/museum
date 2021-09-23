@@ -828,7 +828,7 @@ span {
 h4 {
   font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 28px;
   line-height: 33px;
   letter-spacing: 0.2px;
@@ -973,4 +973,38 @@ h4 {
   text-align: center;
   border: none;
   background-color: transparent;
+}
+
+.contacts-section {
+  height: 963px;
+  padding: 75px 0;
+}
+
+.contacts-container {
+  margin-top: 103px;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.text-contacts {
+  width: 282px;
+  height: 244px;
+  font-family: Roboto;
+  font-style: normal;
+}
+.text-contacts h6 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  color: black;
+  margin-bottom: 50px;
+}
+.text-contacts p {
+  margin-bottom: 26px;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.2px;
 }
