@@ -1,0 +1,99 @@
+
+.amount{
+    width: 175px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    h4{
+        text-align: end;
+        margin-bottom: 15px;
+    }
+    form{
+        width: 100%;
+        height: 50px;
+        
+    }
+}
+
+.amount-box{
+    width: 150px;
+    height: 91px;
+}
+
+.amount-paragraf{
+    font: 22px "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+  
+.amount-paragraf2{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 1.65px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+
+}
+  
+
+
+
+
+
+
+.amount-button-buy{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 22px "Roboto";
+    color: white;
+    letter-spacing: 2px;
+    background-color: black;
+    border-radius:2px;
+    border:none;
+    // padding: 13px 38px;
+    // white-space: nowrap;
+}
+
+.amount-button-buy:hover {
+    background-color: var(--font-gold);
+    cursor: pointer;
+    transition: all 0.15s linear;
+  }
+
+
+.amount-selector{
+    width: 150px;
+    height: 50px;
+    border: solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+        button, input{
+            width: 33.33%;
+            height: 100%;
+
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 26px;
+            text-align: center;
+            border: none;
+            background-color: transparent;
+        }
+        
+}
+
+
+
+

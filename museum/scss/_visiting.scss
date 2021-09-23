@@ -43,20 +43,6 @@ h3::after {
     background-color: var(--dark-red);
 }
 
-.border-title{
-    position: relative;
-}
-
-.border-title::after {
-    content: "";
-    position: absolute;
-    bottom: -25px;
-    left: 0px;
-    right: 0px;
-    height: 3px;
-    background-color: var(--dark-red);
-}
-
 .card p{
     margin-top: 10px;
     color: #000000;

@@ -191,53 +191,64 @@
                 <div class="tickets-container">
                     <img src="assets/img/Tickets.jpg" alt="permanent exhibition" width="720" height="550">
                 
-                    <div class="Ticket-type">
-                        <h3  class="white-text">Ticket type</h3>
-                        <label class="radio-button">Permanent exhibition
-                            <input type="radio" checked="checked" name="radio">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="radio-button">Temporary exhibition
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                        </label>
-                            <label class="radio-button">Combined Admission
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                        </label>
+                    <div class="ticket-type">
+                        <h4  class="white-text">Ticket Type</h4>
+                        <div>
+                            <label class="radio-button">Permanent exhibition
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="radio-button">Temporary exhibition
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                                <label class="radio-button">Combined Admission
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    
                     </div>
 
                     <div class="amount">
-                        <h3 class="white-text">Amount</h3>
-                        <div class="white text;">
-                            <p class="amount-paragraf">Basic 18+</p>
-                            <button type="button" onclick="this.nextElementSibling.stepDown()">
-                                -
-                            </button>
-                            <input type="number" min="0" max="20" value="1" readonly class="number">
-                            <button type="button" onclick="this.previousElementSibling.stepUp()">
-                                +
-                            </button>
+                        <h4>Amount</h4>
+                        <div>
+                            <div class="amount-box">
+                                <p class="amount-paragraf">Basic 18+</p>
+                                <div class="amount-selector">
+                                    <button class="amount-button" type="button" onclick="this.nextElementSibling.stepDown()">
+                                        -
+                                    </button>
+                                    <input type="number" min="0" max="25" value="1" readonly class="number">
+                                    <button class="amount-button" type="button" onclick="this.previousElementSibling.stepUp()">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            
                             
                             <p class="amount-paragraf">Senior</p>
                             
-                            <button type="button" onclick="this.nextElementSibling.stepDown()">
-                                -
-                            </button>
-                            <input type="number" min="0" max="20" value="1" readonly class="number">
-                            <button type="button" onclick="this.previousElementSibling.stepUp()">
-                                +
-                            </button>
+                            <div class="amount-selector">
+                                <button class="amount-button" type="button" onclick="this.nextElementSibling.stepDown()">
+                                    -
+                                </button>
+                                <input type="number" min="0" max="25" value="1" readonly class="number">
+                                <button class="amount-button" type="button" onclick="this.previousElementSibling.stepUp()">
+                                    +
+                                </button>
+                            </div>
                             
                             <p class="amount-paragraf2">Total 220€</p>
 
-                            <form>
-                                <button class="amount-button">Buy Now</button>
-                            </form>
+                            
                             
 
                         </div>
-                        
+                        <form>
+                            <button class="amount-button-buy">Buy Now</button>
+                        </form>
                     </div>
             
                 

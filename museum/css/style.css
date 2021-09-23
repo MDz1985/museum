@@ -402,6 +402,14 @@ html {
   src: local(""), url("../fonts/roboto-v27-latin-500.woff2") format("woff2"), url("../fonts/roboto-v27-latin-500.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+/* roboto-700 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/roboto-v29-latin-700.woff2") format("woff2"), url("../fonts/roboto-v29-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* forum-regular - latin */
 @font-face {
   font-family: "Forum";
@@ -447,6 +455,20 @@ h1, h5 {
   font-size: 28px;
   line-height: 50px;
   letter-spacing: 5px;
+}
+
+.border-title {
+  position: relative;
+}
+
+.border-title::after {
+  content: "";
+  position: absolute;
+  bottom: -27px;
+  left: 0px;
+  right: 0px;
+  height: 3px;
+  background-color: var(--dark-red);
 }
 
 /* SECTIONS GLOBAL */
@@ -648,20 +670,6 @@ h3::after {
   background-color: var(--dark-red);
 }
 
-.border-title {
-  position: relative;
-}
-
-.border-title::after {
-  content: "";
-  position: absolute;
-  bottom: -25px;
-  left: 0px;
-  right: 0px;
-  height: 3px;
-  background-color: var(--dark-red);
-}
-
 .card p {
   margin-top: 10px;
   color: #000000;
@@ -782,4 +790,187 @@ span {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+.tickets-section {
+  height: 893px;
+  padding: 75px 0;
+}
+
+.tickets-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 103px;
+}
+
+.paralax-section {
+  height: 400px;
+  background: url("../assets/parallax.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  /* background-size: 100% 100%; */
+}
+
+.ticket-type {
+  margin-right: 155px;
+  width: 270px;
+  height: 212px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.ticket-type h4 {
+  margin-bottom: 25px;
+}
+
+h4 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 0.2px;
+}
+
+.radio-button {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.radio-button input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  background-color: #eee;
+  border-radius: 8.5px;
+  border: solid black;
+  border-width: 1px;
+}
+
+.radio-button input:checked ~ .checkmark {
+  background-color: white;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radio-button input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.radio-button .checkmark:after {
+  top: 3.6px;
+  left: 3.6px;
+  width: 7px;
+  height: 7px;
+  border-radius: 3.5px;
+  background: black;
+}
+
+.amount {
+  width: 175px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.amount h4 {
+  text-align: end;
+  margin-bottom: 15px;
+}
+.amount form {
+  width: 100%;
+  height: 50px;
+}
+
+.amount-box {
+  width: 150px;
+  height: 91px;
+}
+
+.amount-paragraf {
+  font: 22px "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.amount-paragraf2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 1.65px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.amount-button-buy {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 22px "Roboto";
+  color: white;
+  letter-spacing: 2px;
+  background-color: black;
+  border-radius: 2px;
+  border: none;
+}
+
+.amount-button-buy:hover {
+  background-color: var(--font-gold);
+  cursor: pointer;
+  transition: all 0.15s linear;
+}
+
+.amount-selector {
+  width: 150px;
+  height: 50px;
+  border: solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.amount-selector button, .amount-selector input {
+  width: 33.33%;
+  height: 100%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  border: none;
+  background-color: transparent;
 }
