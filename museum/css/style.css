@@ -680,3 +680,53 @@ h3::after {
   font-size: 18px;
   line-height: 21px;
 }
+
+.explore-section {
+  height: 865px;
+  padding: 75px 0;
+}
+
+.explore-container {
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.explore-container div {
+  display: flex;
+  flex-direction: column;
+}
+
+.explore-text-container {
+  width: 660px;
+}
+.explore-text-container h2 {
+  margin-bottom: 103px;
+}
+.explore-text-container p {
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-family: "Roboto";
+  color: white;
+  letter-spacing: 0.2px;
+  font-weight: 100;
+  line-height: 38.5px;
+}
+
+.explore-img-container {
+  margin-top: 15px;
+  height: 700px;
+  width: 720px;
+  background: url("../assets/explore-slider/after.jpg");
+}
+.explore-img-container img {
+  -o-object-position: left;
+     object-position: left;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 440px;
+}
+
+span {
+  color: var(--font-gold);
+}
