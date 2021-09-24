@@ -26,7 +26,7 @@
   font-size:var(--font3); 
   font-family: "Roboto"; 
   color: white; 
-  letter-spacing: 2px; 
+  letter-spacing: 1.8px; 
   font-weight: 300px;
 }
   
@@ -57,23 +57,6 @@
     // background: url("../assets/welcome-slider/1.jpg") right no-repeat;
     height: 750px;
     width: 1000px;
-}
-  
-  
-.welcome-panel-container{
-    height: 120px;
-    display: flex;
-    flex-direction: row-reverse;
-    transform: translate(0, -100%);
-    
-}
-
-.slide-panel{
-  height: 100%;
-  width: 600px;
-  background-color: #030303;
-  display: flex;
-  align-items: center;
 }
 
 .discover-button {

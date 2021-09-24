@@ -563,7 +563,7 @@ header {
   font-size: var(--font3);
   font-family: "Roboto";
   color: white;
-  letter-spacing: 2px;
+  letter-spacing: 1.8px;
   font-weight: 300px;
 }
 
@@ -595,21 +595,6 @@ header {
   width: 1000px;
 }
 
-.welcome-panel-container {
-  height: 120px;
-  display: flex;
-  flex-direction: row-reverse;
-  transform: translate(0, -100%);
-}
-
-.slide-panel {
-  height: 100%;
-  width: 600px;
-  background-color: #030303;
-  display: flex;
-  align-items: center;
-}
-
 .discover-button {
   font-size: 22px;
   font-family: "Roboto";
@@ -630,6 +615,60 @@ header {
   background-color: var(--font-gold);
   cursor: pointer;
   transition: all 0.15s linear;
+}
+
+.welcome-panel-container {
+  height: 120px;
+  display: flex;
+  flex-direction: row-reverse;
+  transform: translate(0, -100%);
+}
+
+.slide-panel, .slide-panel div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.slide-panel {
+  height: 100%;
+  width: 600px;
+  background-color: #030303;
+  display: flex;
+  align-items: center;
+  padding: 0 75px 0 74px;
+}
+.slide-panel span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 40px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.slide-numbers {
+  width: 76px;
+}
+
+.welcome-selection {
+  width: 180px;
+}
+
+.first-rectangle {
+  fill: #D2B183;
+}
+
+.welcome-arrows {
+  margin-left: 6px;
+  width: 80px;
+}
+.welcome-arrows svg:hover path {
+  fill: var(--font-gold);
+  cursor: pointer;
 }
 
 /*VISITING*/
