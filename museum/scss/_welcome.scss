@@ -86,3 +86,10 @@
     width: 360px;
     height: 75px;
 }
+
+.discover-button:hover{
+    background-color: var(--font-gold);
+    cursor: pointer;
+    transition: all 0.15s linear;
+    // color: black;
+}

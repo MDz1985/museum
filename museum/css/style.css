@@ -383,7 +383,7 @@ html {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 100;
-  src: local(""), url("../fonts/roboto-v27-latin-100.woff2") format("woff2"), url("../fonts/roboto-v27-latin-100.woff") format("woff");
+  src: local(""), url("../assets/fonts/roboto-v27-latin-100.woff2") format("woff2"), url("../assets/fonts/roboto-v27-latin-100.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-300 - latin */
@@ -391,7 +391,7 @@ html {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
-  src: local(""), url("../fonts/roboto-v27-latin-300.woff2") format("woff2"), url("../fonts/roboto-v27-latin-300.woff") format("woff");
+  src: local(""), url("../assets/fonts/roboto-v27-latin-300.woff2") format("woff2"), url("../assets/fonts/roboto-v27-latin-300.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-500 - latin */
@@ -399,7 +399,7 @@ html {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  src: local(""), url("../fonts/roboto-v27-latin-500.woff2") format("woff2"), url("../fonts/roboto-v27-latin-500.woff") format("woff");
+  src: local(""), url("../assets/fonts/roboto-v27-latin-500.woff2") format("woff2"), url("../assets/fonts/roboto-v27-latin-500.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-700 - latin */
@@ -407,7 +407,7 @@ html {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  src: local(""), url("../fonts/roboto-v29-latin-700.woff2") format("woff2"), url("../fonts/roboto-v29-latin-700.woff") format("woff");
+  src: local(""), url("../assets/fonts/roboto-v29-latin-700.woff2") format("woff2"), url("../assets/fonts/roboto-v29-latin-700.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* forum-regular - latin */
@@ -415,7 +415,7 @@ html {
   font-family: "Forum";
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("../fonts/forum-v11-latin-regular.woff2") format("woff2"), url("../fonts/forum-v11-latin-regular.woff") format("woff");
+  src: local(""), url("../assets/fonts/forum-v11-latin-regular.woff2") format("woff2"), url("../assets/fonts/forum-v11-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 body {
@@ -626,6 +626,12 @@ header {
   height: 75px;
 }
 
+.discover-button:hover {
+  background-color: var(--font-gold);
+  cursor: pointer;
+  transition: all 0.15s linear;
+}
+
 /*VISITING*/
 .visiting-section {
   height: 1266px;
@@ -824,9 +830,9 @@ span {
 .paralax-section {
   height: 400px;
   background: url("../assets/parallax.jpg") no-repeat;
-  background-position: center center;
+  background-position: center -497px;
   background-size: cover;
-  /* background-size: 100% 100%; */
+  background-size: 100% 275%;
 }
 
 .ticket-type {
@@ -884,7 +890,7 @@ h4 {
   background-color: #eee;
   border-radius: 8.5px;
   border: solid black;
-  border-width: 1px;
+  border-width: 2px;
 }
 
 .radio-button input:checked ~ .checkmark {
@@ -902,11 +908,11 @@ h4 {
 }
 
 .radio-button .checkmark:after {
-  top: 3.6px;
-  left: 3.6px;
+  top: 3px;
+  left: 3px;
   width: 7px;
   height: 7px;
-  border-radius: 3.5px;
+  border-radius: 5px;
   background: black;
 }
 
@@ -958,6 +964,8 @@ h4 {
   align-items: center;
   justify-content: center;
   font: 22px "Roboto";
+  font-style: normal;
+  font-weight: 300;
   color: white;
   letter-spacing: 2px;
   background-color: black;
@@ -969,6 +977,7 @@ h4 {
   background-color: var(--font-gold);
   cursor: pointer;
   transition: all 0.15s linear;
+  color: black;
 }
 
 .amount-selector {
@@ -1027,13 +1036,23 @@ h4 {
 }
 
 .footer {
+  position: relative;
   height: 392px;
   background: var(--bg-dark);
   display: flex;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 75px 0 50px 0;
+  padding: 75px 0 51px 0;
+}
+
+.footer::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  top: 263px;
+  background: #666666;
 }
 
 .footer-container {
@@ -1095,6 +1114,7 @@ h4 {
 }
 
 .footer-info {
+  position: relative;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -1107,6 +1127,9 @@ h4 {
   font-size: 22px;
   line-height: 22px;
   color: white;
-  /* identical to box height, or 100% */
   letter-spacing: 2px;
+}
+
+.rss {
+  transform: translateX(12px);
 }

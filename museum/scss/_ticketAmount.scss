@@ -39,14 +39,7 @@
     letter-spacing: 1.65px;
     margin-top: 50px;
     margin-bottom: 60px;
-
 }
-  
-
-
-
-
-
 
 .amount-button-buy{
     width: 100%;
@@ -55,6 +48,8 @@
     align-items: center;
     justify-content: center;
     font: 22px "Roboto";
+    font-style: normal;
+    font-weight: 300;
     color: white;
     letter-spacing: 2px;
     background-color: black;
@@ -68,6 +63,7 @@
     background-color: var(--font-gold);
     cursor: pointer;
     transition: all 0.15s linear;
+    color: black;
   }
 
 
