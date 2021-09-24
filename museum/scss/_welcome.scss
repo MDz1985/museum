@@ -1,7 +1,8 @@
 .welcome-section{
     padding-top: 32px;
     width: 100%;
-    height: 842px; 
+    height: 842px;
+     
     /* overflow: hidden; */
 }
   
@@ -52,7 +53,8 @@
   
 .welcome-slide{
     position: relative;
-    background: url("../assets/welcome-slider/1.jpg") right no-repeat;
+    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%), url("../assets/welcome-slider/1.jpg");
+    // background: url("../assets/welcome-slider/1.jpg") right no-repeat;
     height: 750px;
     width: 1000px;
 }

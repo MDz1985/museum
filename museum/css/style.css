@@ -590,7 +590,7 @@ header {
 
 .welcome-slide {
   position: relative;
-  background: url("../assets/welcome-slider/1.jpg") right no-repeat;
+  background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%), url("../assets/welcome-slider/1.jpg");
   height: 750px;
   width: 1000px;
 }
@@ -792,16 +792,33 @@ span {
   gap: 24px;
 }
 
+.shadow {
+  position: relative;
+  height: 360px;
+  background-color: blue;
+  top: -360px;
+}
+
 .tickets-section {
   height: 893px;
   padding: 75px 0;
 }
 
 .tickets-container {
+  position: relative;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   margin-top: 103px;
+}
+
+.tickets-container::before {
+  content: "";
+  position: absolute;
+  top: -628px;
+  height: 360px;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
 }
 
 .paralax-section {
@@ -1007,4 +1024,89 @@ h4 {
   font-size: 22px;
   line-height: 26px;
   letter-spacing: 0.2px;
+}
+
+.footer {
+  height: 392px;
+  background: var(--bg-dark);
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 75px 0 50px 0;
+}
+
+.footer-container {
+  height: 140px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer-logo-container {
+  margin-top: 9px;
+}
+
+.footer-menu-container {
+  width: 360px;
+  height: 128px;
+  align-self: flex-end;
+  transform: translateX(-36%);
+}
+.footer-menu-container ul {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 100%;
+  gap: 25px;
+}
+
+.footer-social {
+  align-self: flex-end;
+  display: flex;
+  width: 340px;
+  height: 48px;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  flex-flow: row wrap;
+}
+.footer-social li {
+  width: 48px;
+  height: 48px;
+  border: 1px solid #666666;
+  filter: drop-shadow(0px 0px 0px #666666);
+  border-radius: 50px;
+}
+.footer-social a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+.footer-social li:hover path {
+  fill: #9D8665;
+}
+.footer-social li:hover {
+  border-color: #9D8665;
+}
+
+.footer-info {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-info span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 22px;
+  color: white;
+  /* identical to box height, or 100% */
+  letter-spacing: 2px;
 }
