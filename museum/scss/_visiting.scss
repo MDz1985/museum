@@ -18,6 +18,11 @@
     height: 424px;
     width: 440px;
 }
+
+.card:hover h3::after{
+    right: 0px;
+    transition: all 0.5s linear;
+}
   
 h3 {
     position: relative;
