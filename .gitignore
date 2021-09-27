@@ -104,6 +104,7 @@ dist
 .tern-port
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # DS_Store
 .DS_Store
 museum/.DS_Store
@@ -113,3 +114,8 @@ museum/.DS_Store
 *.DS_Store
 ._*
 >>>>>>> gh-pages
+=======
+# DS_Store file
+*.DS_Store
+._*
+>>>>>>> main
