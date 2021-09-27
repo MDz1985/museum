@@ -103,7 +103,13 @@ dist
 # TernJS port file
 .tern-port
 
+<<<<<<< HEAD
 # DS_Store
 .DS_Store
 museum/.DS_Store
 .DS_Store
+=======
+# DS_Store file
+*.DS_Store
+._*
+>>>>>>> gh-pages
