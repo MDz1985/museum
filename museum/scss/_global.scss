@@ -33,6 +33,15 @@ html {
          url('../assets/fonts/roboto-v27-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
          url('../assets/fonts/roboto-v27-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../assets/fonts/roboto-v29-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../assets/fonts/roboto-v29-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
   /* roboto-500 - latin */
 @font-face {
     font-family: 'Roboto';
@@ -85,6 +94,11 @@ a {text-decoration: none;
 li a:hover {
   transition: all 0.1s linear;
   color: var(--font-gold);
+}
+
+li a:active{
+  // transition: all 0.1s linear;
+  color: var(#7E6C51);
 }
 
 h1, h5{font: 28px "Forum";color: white;text-transform: uppercase;font-size: 28px;line-height: 50px;letter-spacing: 5px;}

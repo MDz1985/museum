@@ -1,15 +1,19 @@
 
-/*VISITING*/
 .visiting-section{
     height: 1266px;
     padding: 75px 0;
-} 
+}
+
+.visiting-container{
+    height: 100%;
+}
   
 .cards-container {
     position: relative;
     margin-top: 103px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 75px 60px;
 }
   

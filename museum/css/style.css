@@ -394,6 +394,14 @@ html {
   src: local(""), url("../assets/fonts/roboto-v27-latin-300.woff2") format("woff2"), url("../assets/fonts/roboto-v27-latin-300.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+/* roboto-regular - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../assets/fonts/roboto-v29-latin-regular.woff2") format("woff2"), url("../assets/fonts/roboto-v29-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* roboto-500 - latin */
 @font-face {
   font-family: "Roboto";
@@ -448,6 +456,10 @@ li a:hover {
   color: var(--font-gold);
 }
 
+li a:active {
+  color: var(#7E6C51);
+}
+
 h1, h5 {
   font: 28px "Forum";
   color: white;
@@ -471,7 +483,6 @@ h1, h5 {
   background-color: var(--dark-red);
 }
 
-/* SECTIONS GLOBAL */
 .section {
   width: 100vw;
 }
@@ -481,6 +492,7 @@ h1, h5 {
   margin: 0 auto;
   max-width: 1440px;
   width: calc(100% - 40px);
+  overflow: hidden;
 }
 
 .dark-section {
@@ -513,6 +525,7 @@ header {
   display: flex;
   height: 33px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo-container {
@@ -567,14 +580,6 @@ header {
   font-weight: 300px;
 }
 
-.welcome-left button {
-  font-size: 22px;
-  font-family: "Roboto";
-  color: white;
-  letter-spacing: 2px;
-  font-weight: 300px;
-}
-
 .slide-container {
   height: 100%;
   position: relative;
@@ -609,6 +614,7 @@ header {
   border-radius: 10px;
   width: 360px;
   height: 75px;
+  padding: 25px;
 }
 
 .discover-button:hover {
@@ -671,10 +677,13 @@ header {
   cursor: pointer;
 }
 
-/*VISITING*/
 .visiting-section {
   height: 1266px;
   padding: 75px 0;
+}
+
+.visiting-container {
+  height: 100%;
 }
 
 .cards-container {
@@ -682,6 +691,7 @@ header {
   margin-top: 103px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 75px 60px;
 }
 
@@ -833,14 +843,6 @@ span {
   position: relative;
   overflow: hidden;
 }
-.player button {
-  background-color: transparent;
-  border: none;
-}
-.player button:hover {
-  scale: 1.2;
-  transition: all 0.5s ease;
-}
 
 :-webkit-full-screen video {
   width: 100%;
@@ -862,9 +864,63 @@ span {
   height: 85px;
   width: 100%;
   background-color: black;
-  padding: 0 22px 0 24px;
-  gap: 44px;
+  padding: 0 30px 0 30px;
+  gap: 3.6%;
   visibility: visible;
+}
+.controls button {
+  background-color: transparent;
+  border: none;
+  padding-right: 30px;
+}
+.controls button:hover {
+  transition: all 0.25s ease;
+}
+
+.player::before {
+  left: 42.3%;
+  top: 29.3%;
+  z-index: 1;
+  position: absolute;
+  content: "";
+  width: 16%;
+  height: 30%;
+  background: url(../assets/svg/player/Group.svg) no-repeat;
+  background-size: contain;
+}
+
+.play-button {
+  padding-right: 18px;
+  height: 30px;
+  background: url("../assets/svg/player/play.svg") no-repeat;
+  background-size: contain;
+}
+
+.play-button:hover {
+  background: url("../assets/svg/player/playHover.svg") no-repeat;
+  background-size: contain;
+}
+
+.volume-button {
+  height: 30px;
+  background: url("../assets/svg/player/volume.svg") no-repeat;
+  background-size: contain;
+}
+
+.volume-button:hover {
+  background: url("../assets/svg/player/volumeHover.svg") no-repeat;
+  background-size: contain;
+}
+
+.fullscreen-button {
+  height: 36px;
+  background: url("../assets/svg/player/fscreen.svg") no-repeat;
+  background-size: contain;
+}
+
+.fullscreen-button:hover {
+  background: url("../assets/svg/player/fscreenHover.svg") no-repeat;
+  background-size: contain;
 }
 
 .progress {
@@ -875,6 +931,13 @@ span {
   background: #C4C4C4;
   cursor: ew-resize;
   z-index: 5;
+}
+.progress input {
+  width: 0;
+  height: 0;
+  top: 19px;
+  opacity: 0;
+  position: absolute;
 }
 
 /* progress in progress*/
@@ -968,10 +1031,271 @@ span {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
 }
 
+.form {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 1440px;
+  height: 845px;
+  background-color: white;
+  padding: 91px 235px;
+  transform: translateX(-100%);
+  transition: all 0.5s linear;
+  visibility: hidden;
+}
+
+.form::after {
+  position: absolute;
+  content: "";
+  background-color: #ffffff85;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  background: url("../assets/form/Booking fields.jpg");
+}
+
+.close-form {
+  position: absolute;
+  left: 96.25%;
+  right: 2.01%;
+  top: 3.42%;
+  bottom: 93.64%;
+}
+
+.close-form:hover path {
+  stroke: #710707;
+}
+
+.form-left {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 100%;
+}
+
+#title {
+  position: relative;
+  text-transform: uppercase;
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 55px;
+  text-transform: uppercase;
+  color: #9D8665;
+  margin-bottom: 14px;
+}
+
+#title::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #740C11;
+  opacity: 0.9;
+  top: 99px;
+}
+
+#tour {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #710707;
+  margin-bottom: 73px;
+}
+
+.date {
+  opacity: 0;
+}
+
+.left-inputs {
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.left-inputs input, .left-inputs select {
+  opacity: 0;
+  height: 45px;
+}
+
+.date-and-time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.date-and-time input {
+  width: 190px;
+}
+
+.entry-ticket {
+  height: 135px;
+  padding: 10px 15px 15px 15px;
+}
+.entry-ticket div {
+  height: 68px;
+  row-gap: 10px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.entry-ticket p {
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  /* identical to box height */
+  text-transform: capitalize;
+  color: #9D8665;
+  margin-bottom: 22px;
+}
+.entry-ticket p::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #740C11;
+  opacity: 0.9;
+}
+.entry-ticket input {
+  height: 25px;
+}
+.entry-ticket span {
+  margin-top: 3px;
+  margin-bottom: 2px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #030303;
+}
+
+.form-right {
+  display: flex;
+  flex-direction: column;
+  width: 530px;
+  height: 663px;
+  padding: 25px 30px 26px 30px;
+  border: solid #030303 1px;
+}
+
+.cards {
+  position: relative;
+  top: 300px;
+  height: 471px;
+  width: 100%;
+}
+.cards input {
+  height: 35px;
+  border: hidden;
+  padding-left: 9px;
+}
+
+.visible-card, .invisible-card {
+  position: absolute;
+  width: 77%;
+  height: 211px;
+  padding: 15px 20px;
+  border-radius: 3px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #161615;
+}
+
+.visible-card {
+  background: #BCBCBC;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.visible-card div {
+  width: 215px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.visible-card::after {
+  position: absolute;
+  content: url("../assets/form/Mastercard.svg");
+  top: 65px;
+  left: 287px;
+}
+
+.visible-card::before {
+  position: absolute;
+  content: url("../assets/form/Visa.svg");
+  top: 34px;
+  left: 285px;
+}
+
+.invisible-card {
+  top: 30px;
+  left: 110px;
+  background: #939393;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.invisible-card div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 75px;
+  height: 111px;
+}
+.invisible-card p {
+  margin-left: 9px;
+}
+.invisible-card input {
+  width: 75px;
+}
+
+.invisible-card::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 45px;
+  background: #161615;
+  top: 25px;
+  left: 0px;
+}
+
+.cardnumber {
+  width: 215px;
+}
+
+.cardmonth, .cardyear {
+  width: 100px;
+}
+
+.lastdigit {
+  display: block;
+  width: 55px;
+  height: 50px;
+  font-size: 10px;
+  line-height: 12px;
+}
+
 .paralax-section {
   height: 400px;
   background: url("../assets/parallax.jpg") no-repeat;
   background-size: cover;
+  background-size: 100vw;
   background-attachment: fixed;
 }
 
@@ -1011,8 +1335,8 @@ h4 {
   letter-spacing: 0.2px;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+   -ms-user-select: none;
+       user-select: none;
 }
 
 .radio-button input {
@@ -1066,7 +1390,8 @@ h4 {
   text-align: end;
   margin-bottom: 15px;
 }
-.amount form {
+
+.buy-button {
   width: 100%;
   height: 50px;
 }
@@ -1167,12 +1492,12 @@ h4 {
   color: black;
   margin-bottom: 50px;
 }
-.text-contacts p {
+.text-contacts p, .text-contacts a {
   margin-bottom: 26px;
   font-weight: 300;
   font-size: 22px;
   line-height: 26px;
-  letter-spacing: 0.2px;
+  letter-spacing: 0px;
 }
 
 .footer {

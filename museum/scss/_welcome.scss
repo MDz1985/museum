@@ -30,13 +30,15 @@
   font-weight: 300px;
 }
   
-.welcome-left button{
-  font-size:22px; 
-  font-family: "Roboto"; 
-  color: white; 
-  letter-spacing: 2px; 
-  font-weight: 300px;
-}
+// .welcome-left button{
+// .discover-button{
+//   font-size:22px; 
+//   font-family: "Roboto"; 
+//   color: white; 
+//   letter-spacing: 2px; 
+//   font-weight: 300px;
+// }
+
   
 .slide-container{
     height: 100%;
@@ -68,6 +70,7 @@
     border-radius: 10px;
     width: 360px;
     height: 75px;
+    padding: 25px;
 }
 
 .discover-button:hover{
@@ -76,3 +79,4 @@
     transition: all 0.15s linear;
     // color: black;
 }
+
