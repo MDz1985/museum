@@ -6,8 +6,49 @@ const volume = player.querySelector('.volume-slider');
 const buyButton = document.querySelector('.amount-button-buy');
 const ticketsForm = document.querySelector('.form');
 const closeButton = document.querySelector('.close-form');
-const bookButton = document.querySelector('.book-button')
+const bookButton = document.querySelector('.book-button');
+//slider
+const welcomeSlideBar = document.querySelector('.slide-panel');
+const slideNumber = welcomeSlideBar.querySelector('.slide-number');
+const leftArrow = welcomeSlideBar.querySelector('.left-arrow');
+const rightArrow = welcomeSlideBar.querySelector('.right-arrow');
+const firstRectangle = welcomeSlideBar.querySelector('.first-rectangle');
+const secondRectangle = welcomeSlideBar.querySelector('.second-rectangle');
+const thirdRectangle = welcomeSlideBar.querySelector('.third-rectangle');
+const fourthRectangle = welcomeSlideBar.querySelector('.fourth-rectangle');
+const fifthRectangle = welcomeSlideBar.querySelector('.fifth-rectangle');
 
+let a = [firstRectangle,secondRectangle,thirdRectangle,fourthRectangle,fifthRectangle];
+let n = 0;
+
+// console.log (firstRectangle.style);
+// secondRectangle.style.fill = '#D2B183';
+
+function changeRectangleUp(){
+    a[n].style.fill = 'white';
+    if (n<4){
+        n++;
+    } else {
+        n=0;
+    }
+    a[n].style.fill = '#D2B183';
+    slideNumber.textContent = '0'+String(n+1);
+    
+}
+function changeRectangleDown(){
+    a[n].style.fill = 'white';
+    if (n>0){
+        n--;
+    } else {
+        n=4;
+    }
+    a[n].style.fill = '#D2B183';
+    slideNumber.textContent = '0'+String(n+1);
+    
+}
+
+rightArrow.addEventListener('click', changeRectangleUp);
+leftArrow.addEventListener('click', changeRectangleDown);
 // buttons.forEach(button => {
 //     button.addEventListener('click', function (e) {
 //         const x = e.clientX
@@ -95,11 +136,10 @@ function buyTicketsClose(){
 }
 
 buyButton.addEventListener('click', buyTickets);
-
-
-
-
 closeButton.addEventListener('click',buyTicketsClose);
+
+
+
 
 console.log(`Оценка - 141.5 балла 
 Отзыв по пунктам ТЗ:

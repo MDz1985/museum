@@ -53,8 +53,13 @@
     // 
     margin-left: 6px;
     width: 80px;
-    svg:hover path{
+    // svg path{
+    //     height: 30px;
+    // }
+    svg:hover{
+        path{
         fill: var(--font-gold);
+        }
         cursor: pointer;
     }   
 }

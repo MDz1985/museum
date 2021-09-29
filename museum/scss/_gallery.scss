@@ -1,10 +1,10 @@
 .gallery-section{
+    position: relative;
     height: 2200px;
     padding-top: 75px;
     overflow: hidden;
     object-position: top;
 }
-
 
 .art-container{
     // overflow: hidden;
@@ -19,6 +19,18 @@
         gap: 24px;
     }
 }
+
+.art-container::after{
+    content:"";
+    position: absolute;
+    bottom: 0px;
+    // left: 0;
+    width: calc(100% - 40px);
+    max-width: 1440px;
+    height: 360px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    
+}   
 
 .shadow{
     position: relative;

@@ -672,9 +672,11 @@ header {
   margin-left: 6px;
   width: 80px;
 }
+.welcome-arrows svg:hover {
+  cursor: pointer;
+}
 .welcome-arrows svg:hover path {
   fill: var(--font-gold);
-  cursor: pointer;
 }
 
 .visiting-section {
@@ -982,6 +984,7 @@ span {
 }
 
 .gallery-section {
+  position: relative;
   height: 2200px;
   padding-top: 75px;
   overflow: hidden;
@@ -1000,6 +1003,16 @@ span {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+.art-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: calc(100% - 40px);
+  max-width: 1440px;
+  height: 360px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
 }
 
 .shadow {
