@@ -140,6 +140,10 @@ closeButton.addEventListener('click',buyTicketsClose);
 
 
 
+const gallery = document.querySelector('.art-container');
+console.log (gallery.children.length);
+
+
 
 console.log(`Оценка - 141.5 балла 
 Отзыв по пунктам ТЗ:

@@ -3,20 +3,26 @@
     height: 2200px;
     padding-top: 75px;
     overflow: hidden;
-    object-position: top;
+    // object-position: top;
+}
+.gallery-container{
+    height: 2900px;
+    overflow: visible;
 }
 
 .art-container{
-    // overflow: hidden;
     margin-top: 75px;
     width: 100%;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    div{
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
+    flex-flow: column wrap;
+    align-content: space-between;
+    height: 100%;
+    row-gap: 24px;
+    :first-child{
+        padding-top: 50px;
+    }
+    :nth-child(11){
+        margin-top: 50px;
     }
 }
 
@@ -32,10 +38,3 @@
     
 }   
 
-.shadow{
-    position: relative;
-    height: 360px;
-    background-color: blue;
-    top: -360px;
-    // transform: translateY(-100%)
-}

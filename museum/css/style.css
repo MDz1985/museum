@@ -988,21 +988,27 @@ span {
   height: 2200px;
   padding-top: 75px;
   overflow: hidden;
-  -o-object-position: top;
-     object-position: top;
+}
+
+.gallery-container {
+  height: 2900px;
+  overflow: visible;
 }
 
 .art-container {
   margin-top: 75px;
   width: 100%;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+  flex-flow: column wrap;
+  align-content: space-between;
+  height: 100%;
+  row-gap: 24px;
 }
-.art-container div {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+.art-container :first-child {
+  padding-top: 50px;
+}
+.art-container :nth-child(11) {
+  margin-top: 50px;
 }
 
 .art-container::after {
@@ -1013,13 +1019,6 @@ span {
   max-width: 1440px;
   height: 360px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
-}
-
-.shadow {
-  position: relative;
-  height: 360px;
-  background-color: blue;
-  top: -360px;
 }
 
 .tickets-section {
