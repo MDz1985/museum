@@ -141,14 +141,43 @@ closeButton.addEventListener('click',buyTicketsClose);
 
 
 const gallery = document.querySelector('.art-container');
-console.log (gallery.children.length);
+// console.log (gallery.children.length);
+let artArray = []
+const pictureAdress = 'assets/galery/galery';
+let pictures = gallery.firstElementChild;
+for (i = 0; i < gallery.children.length; i++){
+    artArray.push(pictureAdress + String(i+1) + '.jpg');
+
+}
+let sortArray = artArray.sort(sortFunction);  
+
+function sortFunction(a, b) {  
+  return 0.5 - Math.random();
+}  
+
+// console.log(sortArray);
+for (i = 0; i < gallery.children.length; i++){
+    
+    pictures.src = sortArray[i];
+    if (i !== gallery.children.length-1){
+        pictures = pictures.nextElementSibling;
+    }
+    //    console.log(pictures.src);
+}
+
+
+// gallery.innerHTML += '<img src="'+artArray[0]+'"><br>';
+// gallery.innerHTML += '<img src="'+artArray+'"><br>';
+// gallery.firstElementChild
+// console.log (gallery.children.length);
 
 
 
-console.log(`Оценка - 141.5 балла 
+
+console.log(`Оценка - 151.5 балла 
 Отзыв по пунктам ТЗ:
-Не выполненные/не засчитанные пункты:
-1) при перезагрузке (обновлении) страницы картины в блоке Galery отображаются в рандомном порядке 
+
+
 
 Частично выполненные пункты:
 1) вёрстка формы соответствует макету +5
@@ -241,6 +270,8 @@ console.log(`Оценка - 141.5 балла
 41) можно передвигать ползунки громкости и прогресс-бара видео, при этом цвет шкалы до и после ползунка отличается и соответствует макету +2
 
 42) кликами по кнопкам + и - в секции Tiskets можно менять количество билетов Basic и Senior от 0 до 20 +2
+
+43) при перезагрузке (обновлении) страницы картины в блоке Galery отображаются в рандомном порядке +10
 
 
 `)
