@@ -19,7 +19,8 @@
 
 .explore-text-container{
     margin-right: 60px;
-    width: 660px;
+    margin-bottom: 40px;
+    width: 659px;
     h2{
         margin-bottom: 103px;
     }
@@ -28,9 +29,10 @@
         margin-bottom: 25px;
         font-size: 22px; 
         font-family: "Roboto"; 
+        font-style: normal;
         color: white; 
-        letter-spacing: 0.2px; 
-        font-weight: 100;
+        // letter-spacing: 0.2px; 
+        font-weight: 300;
         line-height: 38.5px;
     }
 }

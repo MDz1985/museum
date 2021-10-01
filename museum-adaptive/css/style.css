@@ -773,7 +773,8 @@ h3::after {
 
 .explore-text-container {
   margin-right: 60px;
-  width: 660px;
+  margin-bottom: 40px;
+  width: 659px;
 }
 .explore-text-container h2 {
   margin-bottom: 103px;
@@ -782,9 +783,9 @@ h3::after {
   margin-bottom: 25px;
   font-size: 22px;
   font-family: "Roboto";
+  font-style: normal;
   color: white;
-  letter-spacing: 0.2px;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 38.5px;
 }
 
@@ -1770,5 +1771,27 @@ h4 {
   .card-paragraf2 {
     font-size: 16px;
     line-height: 19px;
+  }
+
+  .explore-section {
+    padding: 53px 0;
+    height: 1149px;
+  }
+  .explore-section p {
+    font-size: 20px;
+    margin-bottom: 0px;
+    line-height: 37px;
+  }
+
+  .explore-text-container {
+    width: 100%;
+    margin-right: 0;
+  }
+  .explore-text-container h2 {
+    margin-bottom: 75px;
+  }
+
+  #last-explore-text {
+    display: none;
   }
 }

@@ -112,4 +112,28 @@
         line-height: 19px;
     }  
 
+
+    // EXPLORE
+
+    .explore-section{
+        padding: 53px 0;
+        height: 1149px;
+        p{
+            font-size: 20px;
+            margin-bottom: 0px;
+            line-height: 37px;
+        }
+    }
+    .explore-text-container{
+        width: 100%;
+        margin-right: 0;
+        h2{
+            margin-bottom: 75px;
+        }
+        
+    }
+
+    #last-explore-text{
+        display: none;
+    }
 }
