@@ -881,7 +881,6 @@ span {
 .controls button {
   background-color: transparent;
   border: none;
-  padding-right: 30px;
 }
 .controls button:hover {
   transition: all 0.25s ease;
@@ -912,7 +911,8 @@ span {
 }
 
 .volume-button {
-  height: 30px;
+  height: 36%;
+  padding-right: 30px;
   background: url("../assets/svg/player/volume.svg") no-repeat;
   background-size: contain;
 }
@@ -923,7 +923,8 @@ span {
 }
 
 .fullscreen-button {
-  height: 36px;
+  height: 41%;
+  padding-left: 30px;
   background: url("../assets/svg/player/fscreen.svg") no-repeat;
   background-size: contain;
 }
@@ -936,7 +937,7 @@ span {
 .progress {
   display: flex;
   flex-basis: 100%;
-  height: 8px;
+  height: 9.43%;
   transition: height 0.3s;
   background: #C4C4C4;
   cursor: ew-resize;
@@ -1793,5 +1794,71 @@ h4 {
 
   #last-explore-text {
     display: none;
+  }
+
+  .video-section {
+    padding: 53px 0;
+    height: 97.8vw;
+  }
+
+  .video {
+    height: 43.5vw;
+    background: transparent url("../assets/video-slides/poster.jpg") 50% 50%/cover no-repeat;
+  }
+
+  .video-text {
+    margin-bottom: 32px;
+  }
+  .video-text div {
+    display: none;
+  }
+
+  .controls {
+    height: 61px;
+    padding-left: 38px;
+    gap: 3.3%;
+  }
+
+  .progress_filled {
+    flex-basis: 40.7%;
+  }
+
+  .progress_filled::after {
+    height: 13px;
+    width: 13px;
+    top: -3px;
+  }
+
+  .volume-slider {
+    max-width: 140px;
+  }
+  .volume-slider div {
+    flex-basis: 39%;
+  }
+
+  .volume-button {
+    padding-right: 25px;
+  }
+
+  .video-library {
+    height: 16.6vw;
+    display: flex;
+    justify-content: flex-start;
+    gap: 3.95vw;
+  }
+  .video-library iframe {
+    width: 29.4vw;
+  }
+
+  .gallery-section {
+    padding-top: 53px;
+    height: calc(100vw + 435px);
+  }
+
+  .art-container {
+    margin-top: 52px;
+  }
+  .art-container img {
+    width: 30.9%;
   }
 }
