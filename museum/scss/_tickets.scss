@@ -9,6 +9,11 @@
     flex-flow:row nowrap;
     justify-content: space-between;
     margin-top: 103px;
+    img{
+        width: calc(10vw + 528px);
+        min-width: 529px;
+        height: 100%;
+    }
 }
  
 .tickets-container::before{
@@ -20,4 +25,10 @@
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
 }
 
-  
+.tickets-text-container{
+    margin-left: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    width: 660px;
+    justify-content: space-between;
+}

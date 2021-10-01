@@ -1,8 +1,11 @@
 .video-library{
-    width: 100%;
+    width: 1935px;
     height: 254px;
     display: flex;
     justify-content: space-between;
+    iframe{
+        width: 452px;
+    }
     // margin: 40px 0;
 }
 

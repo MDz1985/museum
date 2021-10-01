@@ -8,8 +8,8 @@
     padding: 91px 235px;
     transform: translateX(-100%);
     transition: all 0.5s linear;
-    visibility: hidden;
-    // background: url("../assets/img/Popup.jpg");
+    visibility: visible;
+    
 }
 
 .form::after{
@@ -27,7 +27,7 @@
     justify-content: space-between;
     height: 100%;
     width: 100%;
-    background: url('../assets/form/Booking\ fields.jpg');
+    // background: url('../assets/form/Booking\ fields.jpg');
 }
 
 .close-form{
@@ -84,10 +84,10 @@
     margin-bottom: 73px;
 }
 
-.date{
-//     background:  url("../assets/form/date.png") no-repeat ;
-//     background-size: inherit;
-    opacity: 0;
+// .date{
+
+
+    // opacity: 0;
 //     ::-webkit-datetime-edit { padding: 1em; }
 // ::-webkit-datetime-edit-fields-wrapper { background: silver; }
 // ::-webkit-datetime-edit-text { color: red; padding: 0 0.3em; }
@@ -98,7 +98,7 @@
 // ::-webkit-calendar-picker-indicator { display: none; background:  url("../assets/form/date.png") no-repeat ; }
 
     // content: url("../assets/form/date.png") no-repeat;
-}
+// }
 
 .left-inputs{
     height: 460px;
@@ -106,9 +106,9 @@
     flex-direction: column;
     justify-content: space-between;
     input, select{
-        opacity: 0;
+        // opacity: 0;
         height: 45px;
-        // visibility: hidden;
+        visibility: visible;
     }
 }
 

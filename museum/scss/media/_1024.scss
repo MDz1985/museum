@@ -1,0 +1,30 @@
+@media(max-width: 1024px){
+    // HEADER
+    header{
+        height: 131px;
+        margin-bottom: -1;
+        
+    } 
+    main{
+        margin-top: -1;
+    }
+    .menu-container{
+       display: none;
+    }
+    .welcome-slide{
+        
+        width: 700px;
+        background-size: 100%;
+    }
+
+       
+    //WELCOME
+    .welcome-section{
+        box-sizing: border-box;
+        height: 586px;
+        padding-top: 0px;
+    }
+        
+        
+        
+}

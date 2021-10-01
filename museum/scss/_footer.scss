@@ -28,14 +28,17 @@
 
 .footer-logo-container{
     margin-top: 9px;
+    min-width: 180px;
     
 }
 
 .footer-menu-container{
+    display: block;
     width: 360px;
     height: 128px;
     align-self: flex-end;
-    transform: translateX(-36%);
+    // transform: translateX(-36%);
+    margin-right: 254px;
     ul{
         display: flex;
         flex-flow: column wrap;

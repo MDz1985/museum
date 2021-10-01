@@ -55,10 +55,10 @@
   
 .welcome-slide{
     position: relative;
-    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%), url("../assets/welcome-slider/1.jpg");
+    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%), url("../assets/welcome-slider/1.jpg") no-repeat;
     // background: url("../assets/welcome-slider/1.jpg") right no-repeat;
-    height: 750px;
     width: 1000px;
+    background-size: 100%;
 }
 
 .discover-button {

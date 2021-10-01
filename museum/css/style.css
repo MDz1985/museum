@@ -595,9 +595,9 @@ header {
 
 .welcome-slide {
   position: relative;
-  background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%), url("../assets/welcome-slider/1.jpg");
-  height: 750px;
+  background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%), url("../assets/welcome-slider/1.jpg") no-repeat;
   width: 1000px;
+  background-size: 100%;
 }
 
 .discover-button {
@@ -751,7 +751,7 @@ h3::after {
 }
 
 .explore-section {
-  height: 865px;
+  min-height: 865px;
   padding: 75px 0;
 }
 
@@ -759,7 +759,7 @@ h3::after {
   height: 100%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 .explore-container div {
   display: flex;
@@ -767,6 +767,7 @@ h3::after {
 }
 
 .explore-text-container {
+  margin-right: 60px;
   width: 660px;
 }
 .explore-text-container h2 {
@@ -838,7 +839,8 @@ span {
   height: 1081px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  row-gap: 40px;
 }
 
 .player {
@@ -969,10 +971,13 @@ span {
 }
 
 .video-library {
-  width: 100%;
+  width: 1935px;
   height: 254px;
   display: flex;
   justify-content: space-between;
+}
+.video-library iframe {
+  width: 452px;
 }
 
 .video-slider {
@@ -985,24 +990,29 @@ span {
 
 .gallery-section {
   position: relative;
-  height: 2200px;
+  height: calc(100vw + 280px);
   padding-top: 75px;
   overflow: hidden;
 }
 
 .gallery-container {
-  height: 2950px;
+  height: calc(105vw + 980px);
   overflow: visible;
 }
 
 .art-container {
+  overflow: hidden;
   margin-top: 75px;
-  width: 100%;
   display: flex;
   flex-flow: column wrap;
   align-content: space-between;
-  height: 100%;
+  height: calc(100% - 75px - 90px);
   row-gap: 24px;
+  -moz-column-gap: 36px;
+       column-gap: 36px;
+}
+.art-container img {
+  width: 31.5%;
 }
 .art-container :first-child {
   padding-top: 50px;
@@ -1033,6 +1043,11 @@ span {
   justify-content: space-between;
   margin-top: 103px;
 }
+.tickets-container img {
+  width: calc(10vw + 528px);
+  min-width: 529px;
+  height: 100%;
+}
 
 .tickets-container::before {
   content: "";
@@ -1041,6 +1056,14 @@ span {
   height: 360px;
   width: 100%;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+}
+
+.tickets-text-container {
+  margin-left: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  width: 660px;
+  justify-content: space-between;
 }
 
 .form {
@@ -1053,7 +1076,7 @@ span {
   padding: 91px 235px;
   transform: translateX(-100%);
   transition: all 0.5s linear;
-  visibility: hidden;
+  visibility: visible;
 }
 
 .form::after {
@@ -1071,7 +1094,6 @@ span {
   justify-content: space-between;
   height: 100%;
   width: 100%;
-  background: url("../assets/form/Booking fields.jpg");
 }
 
 .close-form {
@@ -1126,10 +1148,6 @@ span {
   margin-bottom: 73px;
 }
 
-.date {
-  opacity: 0;
-}
-
 .left-inputs {
   height: 460px;
   display: flex;
@@ -1137,8 +1155,8 @@ span {
   justify-content: space-between;
 }
 .left-inputs input, .left-inputs select {
-  opacity: 0;
   height: 45px;
+  visibility: visible;
 }
 
 .date-and-time {
@@ -1339,7 +1357,6 @@ span {
 }
 
 .ticket-type {
-  margin-right: 155px;
   width: 270px;
   height: 212px;
   color: black;
@@ -1520,6 +1537,7 @@ h4 {
 
 .text-contacts {
   width: 282px;
+  min-width: 282px;
   height: 244px;
   font-family: Roboto;
   font-style: normal;
@@ -1537,6 +1555,10 @@ h4 {
   font-size: 22px;
   line-height: 26px;
   letter-spacing: 0px;
+}
+
+.map-image img {
+  width: 100%;
 }
 
 .footer {
@@ -1569,13 +1591,15 @@ h4 {
 
 .footer-logo-container {
   margin-top: 9px;
+  min-width: 180px;
 }
 
 .footer-menu-container {
+  display: block;
   width: 360px;
   height: 128px;
   align-self: flex-end;
-  transform: translateX(-36%);
+  margin-right: 254px;
 }
 .footer-menu-container ul {
   display: flex;
@@ -1636,4 +1660,30 @@ h4 {
 
 .rss {
   transform: translateX(12px);
+}
+
+@media (max-width: 1024px) {
+  header {
+    height: 131px;
+    margin-bottom: -1;
+  }
+
+  main {
+    margin-top: -1;
+  }
+
+  .menu-container {
+    display: none;
+  }
+
+  .welcome-slide {
+    width: 700px;
+    background-size: 100%;
+  }
+
+  .welcome-section {
+    box-sizing: border-box;
+    height: 586px;
+    padding-top: 0px;
+  }
 }
