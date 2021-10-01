@@ -202,7 +202,7 @@
 
     .gallery-section{
         padding-top: 53px;
-        height: calc(100vw + 435px);
+        height: calc(100vw + 436px);
     }
 
     .art-container{
@@ -212,6 +212,56 @@
         }
     }
 
+    //TICKETS
 
+    .tickets-section{
+        height: 720px;
+        padding: 53px 0;
+    }
 
+    .tickets-container{
+        height: 440px;
+        margin-top: 75px;
+        width: 97.1%;
+        img {
+            width: 73.3%;
+            // height: 43vw;
+            object-fit: cover;
+        }
+    }
+
+    .ticket-type{
+        display: none;
+    }
+
+    .tickets-text-container{
+        width: 175px;
+        // div{
+        //     width: 100%;
+        // }
+    }
+    .amount{
+        width: 175px;
+        align-items: flex-start ;
+        div{
+            width: 100%;
+        }
+        h4{
+            margin-bottom: 19px;
+        }
+    }
+    .amount-paragraf{
+        margin-bottom: 11px;
+    }
+    
+    .amount-box{
+        margin-bottom: 24px;
+    }
+    .amount-paragraf2{
+        margin-top: 0;
+        margin-bottom: 65px;
+    }
+    count{
+        margin-left: 7px;
+    }
 }

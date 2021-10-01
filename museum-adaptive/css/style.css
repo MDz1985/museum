@@ -1484,6 +1484,9 @@ h4 {
   margin-top: 50px;
   margin-bottom: 60px;
 }
+.amount-paragraf2 span {
+  color: black;
+}
 
 .amount-button-buy {
   width: 100%;
@@ -1527,6 +1530,10 @@ h4 {
   text-align: center;
   border: none;
   background-color: transparent;
+}
+
+.count {
+  margin-left: -9px;
 }
 
 .contacts-section {
@@ -1852,7 +1859,7 @@ h4 {
 
   .gallery-section {
     padding-top: 53px;
-    height: calc(100vw + 435px);
+    height: calc(100vw + 436px);
   }
 
   .art-container {
@@ -1860,5 +1867,57 @@ h4 {
   }
   .art-container img {
     width: 30.9%;
+  }
+
+  .tickets-section {
+    height: 720px;
+    padding: 53px 0;
+  }
+
+  .tickets-container {
+    height: 440px;
+    margin-top: 75px;
+    width: 97.1%;
+  }
+  .tickets-container img {
+    width: 73.3%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .ticket-type {
+    display: none;
+  }
+
+  .tickets-text-container {
+    width: 175px;
+  }
+
+  .amount {
+    width: 175px;
+    align-items: flex-start;
+  }
+  .amount div {
+    width: 100%;
+  }
+  .amount h4 {
+    margin-bottom: 19px;
+  }
+
+  .amount-paragraf {
+    margin-bottom: 11px;
+  }
+
+  .amount-box {
+    margin-bottom: 24px;
+  }
+
+  .amount-paragraf2 {
+    margin-top: 0;
+    margin-bottom: 65px;
+  }
+
+  count {
+    margin-left: 7px;
   }
 }
