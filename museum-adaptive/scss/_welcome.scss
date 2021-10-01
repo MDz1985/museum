@@ -18,17 +18,18 @@
     width: 598px;
     height: 388px;
     bottom: 660px;
+    p{
+        position: relative;
+        bottom: 25px;
+        font-size:var(--font3); 
+        font-family: "Roboto";
+        font-style: normal; 
+        color: white; 
+        letter-spacing: 2px; 
+        font-weight: 300px;
+    }
 }
-  
-.welcome-left p{
-  position: relative;
-  bottom: 25px;
-  font-size:var(--font3); 
-  font-family: "Roboto"; 
-  color: white; 
-  letter-spacing: 1.8px; 
-  font-weight: 300px;
-}
+        
   
 // .welcome-left button{
 // .discover-button{

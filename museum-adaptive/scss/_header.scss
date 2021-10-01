@@ -2,7 +2,7 @@
 
 header{
     background: var(--bg-dark);
-    padding: 60px 0px 55px 0;
+    
     color: #fff;
     height: 150px;
     margin-bottom: -32px;
@@ -12,7 +12,7 @@ header{
   
   .header-container {
     display: flex;
-    height: 33px;
+    height: 100%;
     justify-content: space-between;
     align-items: center;
   }
@@ -38,4 +38,6 @@ header{
     align-items: center;
   }
    
-  
+  .burger-button{
+    display: none;
+  }

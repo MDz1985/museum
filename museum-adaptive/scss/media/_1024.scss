@@ -1,22 +1,26 @@
 @media(max-width: 1024px){
     // HEADER
     header{
-        height: 131px;
-        margin-bottom: -1;
+        height: 130px;
+        margin-bottom: -1px;
         
     } 
-    main{
-        margin-top: -1;
-    }
+    // main{
+    //     margin-top: -1px;
+    // }
+    .burger-button{
+        display: block;
+      }
+
     .menu-container{
        display: none;
     }
-    .welcome-slide{
-        
-        width: 700px;
-        background-size: 100%;
-    }
+    
 
+    //GLOBAL
+    .section-title {
+        font-size: 50px;
+    }
        
     //WELCOME
     .welcome-section{
@@ -25,6 +29,44 @@
         padding-top: 0px;
     }
         
+    .welcome-left {
+        width: 445px;
+        height: 343px;
+        bottom: 536px;
+        p{
+            font-size: 24px;
+            line-height: 28px;
+            bottom: 13px;
+        }
+    }
+
+    .discover-button {
+        height: 60px;
+        width: 300px;
+        padding: 16px;
+        font-size: 20px;
+        line-height: 23px;
+    }    
+
+    .welcome-slide{
         
+        width: 700px;
+        background-size: 100%;
+    }
+
+    .slide-panel{
+        width: 720px;
+        padding-left: 243px;
+        span{
+            font-size: 20px;
+            letter-spacing: 3px;
+        }
+    }
+    .welcome-selection{
+        width: 160px;
+        svg{
+            width: 12px;
+        }
+    }
         
 }
