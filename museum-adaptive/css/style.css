@@ -610,7 +610,6 @@ header {
   letter-spacing: 2px;
   background: var(--dark-red);
   color: white;
-  padding: 20px;
   text-align: center;
   border: none;
   display: inline-block;
@@ -701,9 +700,20 @@ header {
 }
 
 .card {
+  background-size: 100%;
   display: block;
   height: 424px;
   width: 440px;
+}
+.card img {
+  width: 100%;
+}
+.card p {
+  margin-top: 10px;
+  color: #000000;
+  font-family: "Roboto";
+  font-weight: 100;
+  letter-spacing: normal;
 }
 
 .card:hover h3::after {
@@ -733,14 +743,6 @@ h3::after {
   right: 140px;
   height: 2px;
   background-color: var(--dark-red);
-}
-
-.card p {
-  margin-top: 10px;
-  color: #000000;
-  font-family: "Roboto";
-  font-weight: 100;
-  letter-spacing: normal;
 }
 
 .card-paragraf {
@@ -1683,6 +1685,10 @@ h4 {
     font-size: 50px;
   }
 
+  .border-title::after {
+    bottom: -15px;
+  }
+
   .welcome-section {
     box-sizing: border-box;
     height: 586px;
@@ -1703,7 +1709,7 @@ h4 {
   .discover-button {
     height: 60px;
     width: 300px;
-    padding: 16px;
+    padding: 20px;
     font-size: 20px;
     line-height: 23px;
   }
@@ -1727,5 +1733,42 @@ h4 {
   }
   .welcome-selection svg {
     width: 12px;
+  }
+
+  .visiting-section {
+    height: 1433px;
+    padding: 53px 0;
+  }
+
+  .cards-container {
+    gap: 60px 108px;
+    margin-top: 75px;
+  }
+
+  .card {
+    width: 330px;
+    height: 345px;
+  }
+
+  h3 {
+    font-size: 28px;
+    line-height: 31px;
+    letter-spacing: 3px;
+  }
+
+  h3::after {
+    bottom: -13px;
+    left: 1px;
+    right: 180px;
+  }
+
+  .card-paragraf {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .card-paragraf2 {
+    font-size: 16px;
+    line-height: 19px;
   }
 }

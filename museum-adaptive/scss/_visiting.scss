@@ -16,11 +16,42 @@
     justify-content: center;
     gap: 75px 60px;
 }
+
+// .cards-container:first-child{
+//     background: url('../assets/img/1RoyalPalace.jpg') no-repeat;    
+// }
+// .cards-container:nth-child(2){
+//     background: url('../assets/img/1RoyalPalace.jpg') no-repeat;
+// }
+// .cards-container:nth-child(3){
+//     background: url('../assets/img/1RoyalPalace.jpg') no-repeat;
+// }
+// .cards-container:nth-child(4){
+//     background: url('../assets/img/1RoyalPalace.jpg') no-repeat;
+// }
+// .cards-container:nth-child(5){
+//     background: url('../assets/img/1RoyalPalace.jpg') no-repeat;
+// }
+// .cards-container:chi{
+//     background: url('../assets/img/1RoyalPalace.jpg') no-repeat;
+// }
   
 .card{
+    background-size: 100%;
     display: block;
     height: 424px;
     width: 440px;
+    img{
+        width: 100%;
+
+    }
+    p{
+        margin-top: 10px;
+        color: #000000;
+        font-family: "Roboto";
+        font-weight: 100;
+        letter-spacing: normal;   
+    }
 }
 
 .card:hover h3::after{
@@ -52,13 +83,7 @@ h3::after {
     background-color: var(--dark-red);
 }
 
-.card p{
-    margin-top: 10px;
-    color: #000000;
-    font-family: "Roboto";
-    font-weight: 100;
-    letter-spacing: normal;   
-}
+
 
 .card-paragraf {
     font-size: 22px;
