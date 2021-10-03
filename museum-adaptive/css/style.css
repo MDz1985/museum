@@ -1758,7 +1758,7 @@ h4 {
   }
 
   .card {
-    width: 330px;
+    width: calc(10% + 232px);
     height: 345px;
   }
 
@@ -1982,7 +1982,7 @@ h4 {
   }
 
   .border-title::after {
-    bottom: -15px;
+    bottom: -23px;
   }
 
   header {
@@ -2051,7 +2051,33 @@ h4 {
   }
 
   .visiting-section {
-    height: 1225px;
-    padding: 26px 0;
+    height: 1226px;
+    padding: 40px 0;
+  }
+
+  .cards-container {
+    margin-top: 63px;
+    gap: 41px calc(12% - 32px);
+  }
+
+  .card {
+    width: calc(30% + 62px);
+    height: 300px;
+  }
+
+  h3 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  h3::after {
+    bottom: -11px;
+    left: 0px;
+    right: 130px;
+  }
+
+  .card-paragraf {
+    font-size: 18px;
+    line-height: 21px;
   }
 }
