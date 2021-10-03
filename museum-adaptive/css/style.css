@@ -1918,7 +1918,7 @@ h4 {
     margin-left: 7px;
   }
 
-  .paralax {
+  .paralax-section {
     height: 400px;
     background-size: 188vw;
     background-position: center 54.8%;
@@ -2238,5 +2238,9 @@ h4 {
   .amount-paragraf2 {
     margin-top: 33px;
     margin-bottom: 40px;
+  }
+
+  .paralax-section {
+    height: 300px;
   }
 }
