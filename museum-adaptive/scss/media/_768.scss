@@ -225,4 +225,19 @@
         }
     }
 
+     // GALLERY
+
+
+     .gallery-section{
+        padding-top: 40px;
+        height: calc(100vw + 452px);
+    }
+
+    .art-container{
+        column-gap: 3.2%;
+        margin-top: 40px;
+        img{
+            width: 48.4%;
+        }
+    }
 }
