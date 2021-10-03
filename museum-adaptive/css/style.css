@@ -1941,7 +1941,6 @@ h4 {
   .text-contacts a, .text-contacts p {
     font-size: 20px;
     line-height: 23px;
-    margin-bottom: 15px;
   }
 
   .map-image {
@@ -2242,5 +2241,35 @@ h4 {
 
   .paralax-section {
     height: 300px;
+  }
+
+  .contacts-section {
+    padding: 40px 0;
+    height: 925px;
+  }
+
+  .contacts-container {
+    margin-top: 63px;
+    flex-direction: column;
+  }
+
+  .text-contacts {
+    height: 219px;
+  }
+  .text-contacts h6 {
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 40px;
+  }
+  .text-contacts a, .text-contacts p {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 15px;
+  }
+
+  .map-image {
+    width: 100%;
+    height: 476px;
+    background-size: calc(100% + 227px);
   }
 }
