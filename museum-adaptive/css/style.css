@@ -842,7 +842,7 @@ span {
 
 .player-container {
   width: 100%;
-  height: 1081px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -941,14 +941,7 @@ span {
   transition: height 0.3s;
   background: #C4C4C4;
   cursor: ew-resize;
-  z-index: 5;
-}
-.progress input {
-  width: 0;
-  height: 0;
-  top: 19px;
-  opacity: 0;
-  position: absolute;
+  z-index: 1;
 }
 
 /* progress in progress*/
@@ -968,6 +961,7 @@ span {
   top: -4px;
   border-radius: 50px;
   background-color: white;
+  z-index: 1;
 }
 
 .volume-slider {
@@ -1829,7 +1823,7 @@ h4 {
     gap: 3.3%;
   }
 
-  .progress_filled {
+  .progress-slider_filled {
     flex-basis: 40.7%;
   }
 
@@ -2105,5 +2099,95 @@ h4 {
   .explore-img-container::after {
     content: url("../assets/explore-slider/explore slider.svg");
     top: 0;
+  }
+
+  .video-section {
+    padding: 40px 0;
+    height: calc(70vw + 300px);
+  }
+
+  .video {
+    background: transparent url("../assets/video-slides/poster.jpg") 50% 50%/cover no-repeat;
+  }
+
+  .video-text {
+    margin-bottom: 20px;
+  }
+
+  .player-container {
+    row-gap: 20px;
+  }
+
+  .player::before {
+    left: 44.3%;
+    top: 32.3%;
+    width: 11%;
+    height: 24%;
+  }
+
+  .controls {
+    height: 53px;
+    padding-left: 30px;
+    gap: 0;
+  }
+
+  .play-button {
+    padding-right: 30px;
+  }
+
+  .progress-slider {
+    position: absolute;
+    left: 0;
+    top: -6px;
+    width: 100%;
+  }
+
+  .progress-slider_filled {
+    flex-basis: 31.5%;
+  }
+
+  .progress {
+    height: 5px;
+  }
+
+  .progress_filled::after {
+    height: 13px;
+    width: 13px;
+    top: -3px;
+  }
+
+  .volume-slider {
+    max-width: 73%;
+    margin-right: 11px;
+  }
+  .volume-slider div {
+    flex-basis: 40%;
+  }
+
+  .volume-button {
+    padding-left: 15px;
+    height: 22px;
+  }
+
+  .fullscreen-button {
+    height: 27px;
+    padding-left: 22px;
+  }
+
+  .video-library {
+    height: 25.9vw;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2.5vw;
+  }
+  .video-library iframe {
+    width: 46.15vw;
+  }
+
+  .video-slider {
+    width: 190px;
+  }
+  .video-slider svg {
+    width: 10px;
   }
 }
