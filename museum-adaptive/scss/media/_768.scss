@@ -240,4 +240,43 @@
             width: 48.4%;
         }
     }
+
+     //TICKETS
+
+     .tickets-section{
+        height: 633px;
+        padding: 40px 0;
+    }
+    .tickets-container{
+        height: 430px;
+        margin-top: 63px;
+        width: 93.3%;
+        img {
+            min-width: 190px;
+            width: 57.8vw;
+            height: 340px; 
+            // height: 43vw;
+            object-fit: cover;
+        }
+    }
+    .amount{
+        
+        
+        h4{
+            margin-bottom: 29px;
+        }
+    }
+    .amount-paragraf{
+        margin-bottom: 9px;
+    }
+    
+    .amount-box{
+        margin-bottom: 20px;
+    }
+    .amount-paragraf2{
+        margin-top: 33px;
+        margin-bottom: 40px;
+    }
+    
+
 }

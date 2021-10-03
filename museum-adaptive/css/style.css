@@ -1914,7 +1914,7 @@ h4 {
     margin-bottom: 65px;
   }
 
-  count {
+  .count {
     margin-left: 7px;
   }
 
@@ -2203,5 +2203,40 @@ h4 {
   }
   .art-container img {
     width: 48.4%;
+  }
+
+  .tickets-section {
+    height: 633px;
+    padding: 40px 0;
+  }
+
+  .tickets-container {
+    height: 430px;
+    margin-top: 63px;
+    width: 93.3%;
+  }
+  .tickets-container img {
+    min-width: 190px;
+    width: 57.8vw;
+    height: 340px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .amount h4 {
+    margin-bottom: 29px;
+  }
+
+  .amount-paragraf {
+    margin-bottom: 9px;
+  }
+
+  .amount-box {
+    margin-bottom: 20px;
+  }
+
+  .amount-paragraf2 {
+    margin-top: 33px;
+    margin-bottom: 40px;
   }
 }
