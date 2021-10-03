@@ -1,4 +1,80 @@
 @media(max-width: 768px){
+     //GLOBAL
+     .section-title {
+        font-size: 40px;
+        line-height: 60px;
+
+    }
+    
+    .border-title::after {
+        bottom: -15px;
+    }
+
+    // HEADER
+    header{
+        height: 110px;
+    } 
+        
+    .logo-container{
+        bottom: -7px;
+        position: relative;
+    }
+
+    //WELCOME
+    .welcome-section{
+        height: 112.2vw;
+    }
+    
+    .welcome-container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .welcome-left{
+        margin-bottom: 35px;
+        height: 242px;
+        bottom: 0px;
+        align-items: center;
+        text-align: center;
+        p{
+            font-size: 20px;
+            line-height: 23px;
+        }
+    }
+    
+    .discover-button{
+        display: none;
+    }
+
+    .welcome-slide-container{
+        width: 100%;
+    }
+    .welcome-slide{
+        width: 100%;
+        background:url("../assets/welcome-slider/1.jpg") no-repeat;
+        background-size: contain;
+    }
+
+    .welcome-panel-container{
+        height: 100px;
+        justify-content: center;
+        background: #030303;
+    }
+    .slide-panel{
+        padding: 0;
+        width: 401px;
+        
+        
+        span{
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+    }
+    .slide-numbers {
+        width: 73px;
+        margin-right: 5px;
+    }            
     //VISITING
     .visiting-section{
         height: 1225px;

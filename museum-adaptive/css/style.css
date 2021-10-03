@@ -580,7 +580,7 @@ header {
   font-style: normal;
   color: white;
   letter-spacing: 2px;
-  font-weight: 300px;
+  font-weight: 300;
 }
 
 .slide-container {
@@ -1571,8 +1571,11 @@ h4 {
   letter-spacing: 0px;
 }
 
-.map-image img {
-  width: 100%;
+.map-image {
+  width: 70%;
+  height: 620px;
+  background: url(../assets/img/Map.png) no-repeat right top;
+  background-size: contain;
 }
 
 .footer {
@@ -1947,6 +1950,12 @@ h4 {
     margin-bottom: 15px;
   }
 
+  .map-image {
+    width: calc(70% + 5px);
+    height: 454px;
+    background-size: calc(100% + 267px);
+  }
+
   .footer {
     height: 368px;
     padding: 52px 0 49px 0;
@@ -1967,6 +1976,80 @@ h4 {
   }
 }
 @media (max-width: 768px) {
+  .section-title {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .border-title::after {
+    bottom: -15px;
+  }
+
+  header {
+    height: 110px;
+  }
+
+  .logo-container {
+    bottom: -7px;
+    position: relative;
+  }
+
+  .welcome-section {
+    height: 112.2vw;
+  }
+
+  .welcome-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .welcome-left {
+    margin-bottom: 35px;
+    height: 242px;
+    bottom: 0px;
+    align-items: center;
+    text-align: center;
+  }
+  .welcome-left p {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .discover-button {
+    display: none;
+  }
+
+  .welcome-slide-container {
+    width: 100%;
+  }
+
+  .welcome-slide {
+    width: 100%;
+    background: url("../assets/welcome-slider/1.jpg") no-repeat;
+    background-size: contain;
+  }
+
+  .welcome-panel-container {
+    height: 100px;
+    justify-content: center;
+    background: #030303;
+  }
+
+  .slide-panel {
+    padding: 0;
+    width: 401px;
+  }
+  .slide-panel span {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  .slide-numbers {
+    width: 73px;
+    margin-right: 5px;
+  }
+
   .visiting-section {
     height: 1225px;
     padding: 26px 0;

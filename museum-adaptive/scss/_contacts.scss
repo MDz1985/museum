@@ -35,9 +35,10 @@
 }
 
 .map-image{
-  img{
-    width: 100%;
-  }
+  width: 70%;
+  height: 620px;
+  background: url(../assets/img/Map.png) no-repeat right top;
+  background-size: contain;
 }
 
 
