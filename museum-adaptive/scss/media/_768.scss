@@ -105,5 +105,31 @@
         line-height: 21px;
     }  
       
+    // EXPLORE
 
+    .explore-section{
+        padding: 40px 0;
+        height: 908px;
+    }
+    .explore-text-container{
+        div{
+            display: none;
+        }
+        h2{
+            margin-bottom: 8px;
+        }
+    }
+    .explore-img-container {
+        height: 705px;
+        width: 728px;
+        background-size: cover;
+        #lasMeninas{
+            height: 100%;
+
+        }
+    }
+    .explore-img-container::after {
+        content: url("../assets/explore-slider/explore slider.svg");
+        top: 0;
+    }
 }

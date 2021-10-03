@@ -1808,7 +1808,7 @@ h4 {
 
   .video-section {
     padding: 53px 0;
-    height: 97.8vw;
+    height: calc(70vw + 285px);
   }
 
   .video {
@@ -2079,5 +2079,31 @@ h4 {
   .card-paragraf {
     font-size: 18px;
     line-height: 21px;
+  }
+
+  .explore-section {
+    padding: 40px 0;
+    height: 908px;
+  }
+
+  .explore-text-container div {
+    display: none;
+  }
+  .explore-text-container h2 {
+    margin-bottom: 8px;
+  }
+
+  .explore-img-container {
+    height: 705px;
+    width: 728px;
+    background-size: cover;
+  }
+  .explore-img-container #lasMeninas {
+    height: 100%;
+  }
+
+  .explore-img-container::after {
+    content: url("../assets/explore-slider/explore slider.svg");
+    top: 0;
   }
 }
