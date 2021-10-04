@@ -2558,4 +2558,16 @@ h4 {
   .video-slider svg {
     height: 8px;
   }
+
+  .gallery-section {
+    height: calc(100vw + 337px);
+  }
+
+  .art-container {
+    -moz-column-gap: 6.2%;
+         column-gap: 6.2%;
+  }
+  .art-container img {
+    width: 46.9%;
+  }
 }

@@ -221,4 +221,19 @@
         }
     }
 
+    // GALLERY
+
+
+    .gallery-section{
+        
+        height: calc(100vw + 337px);
+    }
+
+    .art-container{
+        column-gap: 6.2%;
+        // margin-top: 40px;
+        img{
+            width: 46.9%;
+        }
+    }
 }
