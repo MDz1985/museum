@@ -121,4 +121,25 @@
     }  
    
 
+
+     // EXPLORE
+
+
+    .explore-section{
+        padding: 40px 0;
+        height: calc(90vw + 173px);
+        
+    }
+    .explore-text-container{
+        div{
+            display: none;
+        }
+        h2{
+            margin-bottom: 8px;
+        }
+    }
+    .explore-img-container {
+        height: 88vw;
+    }
+    
 }

@@ -2099,7 +2099,8 @@ h4 {
 
   .explore-section {
     padding: 40px 0;
-    height: 908px;
+    height: calc(90vw + 217px);
+    min-height: 400px;
   }
 
   .explore-text-container div {
@@ -2110,17 +2111,23 @@ h4 {
   }
 
   .explore-img-container {
-    height: 705px;
-    width: 728px;
+    height: 92vw;
+    width: 100%;
     background-size: cover;
   }
   .explore-img-container #lasMeninas {
     height: 100%;
+    width: 60.6%;
   }
 
   .explore-img-container::after {
-    content: url("../assets/explore-slider/explore slider.svg");
+    content: "";
     top: 0;
+    left: 57.8%;
+    height: 100%;
+    width: 50px;
+    background: url("../assets/explore-slider/explore slider.svg") no-repeat;
+    background-size: contain;
   }
 
   .video-section {
@@ -2459,5 +2466,21 @@ h4 {
   .card-paragraf {
     font-size: 16px;
     line-height: 19px;
+  }
+
+  .explore-section {
+    padding: 40px 0;
+    height: calc(90vw + 173px);
+  }
+
+  .explore-text-container div {
+    display: none;
+  }
+  .explore-text-container h2 {
+    margin-bottom: 8px;
+  }
+
+  .explore-img-container {
+    height: 88vw;
   }
 }
