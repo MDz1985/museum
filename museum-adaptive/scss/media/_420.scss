@@ -291,7 +291,50 @@
         text-align: center;
         letter-spacing: 0px;
     }
+    .count{
+        margin-left: 0px;
+    }
     .amount-button-buy {
         font-size: 16px;
     }
+
+
+
+    //PARALAX
+    .paralax-section{
+        background-size: 343%;
+        background-position: 51.4% 79.5%;
+    }
+
+
+    //CONTACTS
+
+    .contacts-section{
+        
+        height: 636px;
+    }
+
+    
+    .text-contacts{
+        height: 204px;
+        h6{
+            font-size: 16px;
+            line-height: 19px;
+            
+        }
+        a, p{
+            font-size: 16px;
+            line-height: 19px;
+            
+        }
+    }
+
+    .map-image{
+        background: url("../assets/img/map420.png") no-repeat;
+        width: 100%;
+        height: 476px;
+        // background-size: calc(100% + 227px);
+        
+    }
+
 }
