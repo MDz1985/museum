@@ -2572,7 +2572,7 @@ h4 {
   }
 
   .tickets-section {
-    height: 180.8vw;
+    height: 759px;
   }
 
   .tickets-container {
@@ -2652,5 +2652,69 @@ h4 {
     background: url("../assets/img/map420.png") no-repeat;
     width: 100%;
     height: 476px;
+  }
+
+  .footer {
+    height: 400px;
+    padding: 32px 0 38px 0;
+  }
+
+  .rss {
+    display: none;
+  }
+
+  .footer-container {
+    height: 225px;
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  .footer::after {
+    top: 296px;
+    height: 1px;
+  }
+
+  .footer-left-block {
+    flex-direction: column;
+    justify-items: flex-start;
+    width: 100%;
+    padding-right: 0;
+    padding-top: 10px;
+  }
+
+  .footer-logo-container {
+    width: 1.9vw;
+    min-width: 133px;
+    bottom: 2px;
+  }
+
+  .footer-menu-container {
+    align-self: flex-start;
+    margin-right: 0;
+    width: 100%;
+    height: 69px;
+    padding-top: 0px;
+    margin-top: 42px;
+  }
+  .footer-menu-container a {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .a-video, .a-gallery {
+    position: relative;
+    left: 7px;
+  }
+
+  .footer-social {
+    margin-bottom: 0;
+    width: 260px;
+  }
+
+  .footer-info {
+    padding: 0 4px 1px 4px;
+  }
+  .footer-info span, .footer-info a {
+    font-size: 16px;
   }
 }
