@@ -20,14 +20,25 @@
 
 .footer-container {
     height: 140px;
+    // display: grid;
+    // grid-template-rows: 140px auto;
+    // grid-template-columns: auto 340px;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     align-items: flex-start;
     justify-content: space-between;
 }
 
+.footer-left-block{
+    display: flex;
+    // width: calc(40% + 261px);
+    width: calc(30% + 269px);
+    justify-content: space-between;
+    padding-top: 9px;
+}
+
 .footer-logo-container{
-    margin-top: 9px;
+    
     min-width: 180px;
     
 }
@@ -38,7 +49,7 @@
     height: 128px;
     align-self: flex-end;
     // transform: translateX(-36%);
-    margin-right: 254px;
+    // margin-right: 254px;
     ul{
         display: flex;
         flex-flow: column wrap;

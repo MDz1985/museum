@@ -288,7 +288,7 @@
         }
         a, p{
             font-size: 20px;
-            line-height: 23px;
+            line-height: 14px;
             
         }
     }
@@ -309,13 +309,16 @@
     .footer::after{
         top: 243px;
     }
+    .footer-left-block{
+        width: 53.5vw;
+    }
     .footer-menu-container{
-        margin-right: 54px;
+        // margin-right: 54px;
         width: 310px;
     }
     .footer-social {
         margin-bottom: 0;
-        width: 342px;
+        width: 33vw;
     }
     
 }
