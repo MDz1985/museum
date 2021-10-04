@@ -1,3 +1,124 @@
 @media(max-width: 420px){
+    //GLOBAL
+    .section-title {
+        font-size: 28px;
+        line-height: 40px;
+
+    }
+    
+    .border-title::after {
+        bottom: -23px;
+    }
+
+    // HEADER
+    header{
+        height: 90px;
+    } 
+        
+    .logo-container{
+        height: 16px;
+        min-width: 118px;
+        padding: 5px 0px 0px 0px;
+        bottom: 2px;
+        background-size: contain;
+        width: 138px;
+        
+    }
+    h1,h5{
+        font-size: 16px;
+        line-height: 18px;
+    }
+     //WELCOME
+     .welcome-section{
+        height: 129.7vw;
+    }
+    
+    .welcome-left{
+
+        margin-bottom: 43px;
+        height: 205px;
+        bottom: -7px;
+        align-items: center;
+        text-align: center;
+        p{
+            font-size: 16px;
+            line-height: 19px;
+        }
+        h2{
+            position: relative;
+            left:2px;
+        }
+    }
+
+    .welcome-panel-container{
+        height: 19vw;
+        justify-content: center;
+        background: #030303;
+    }
+    .slide-panel{
+        padding: 0;
+        width: 60.2%;
+        
+        
+        span{
+            font-size: 3.7vw;
+            letter-spacing: 1px;
+        }
+    }
+    .slide-numbers {
+        width: 22%;
+        margin-right: -3px;
+    }
+    .welcome-selection{
+        position: relative;
+        top: 1px;
+        width: 33%;
+        svg{
+            width: 7px;
+            height: 7px;
+        }
+    }  
+    .welcome-arrows{
+        width: 24.2%;
+        margin-left: -3px;
+        svg{
+            width: 37.5%;
+            path{
+                height: 100%;
+            }
+        }
+    }        
+    
+
+    //VISITING
+    .visiting-section{
+        height: 2153px;
+        padding: 40px 0;
+    }
+    .cards-container{
+        margin-top: 63px;
+        gap: 41px calc(12% - 32px);
+    }
+    .card{
+        width: calc(30% + 166px);
+        height: 294px;
+    }
+    h3 {
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 5px;
+    }
+    h3::after{
+        bottom: -11px;
+        left: 0px;
+        right: 130px;
+    }
+
+
+    .card-paragraf {
+        font-size: 16px;
+        line-height: 19px;
+    }  
+   
 
 }
