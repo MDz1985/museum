@@ -171,23 +171,19 @@ function fullscreen (){
         video.webkitExitFullScreen();
     }else if (document.fullscreenElement && document.fullscreenElement.nodeName == 'VIDEO') {
         video.exitFullScreen();
-    }else if (document.mozFullscreenElement && document.mozFullscreenElement.nodeName == 'VIDEO') {
-        video.mozExitFullScreen();
+    
     
 
 
    }else{
-    if(video.requestFullscreen) {
-        //console.log('a');
-      video.requestFullscreen();
-    } else if(video.webkitRequestFullscreen) {
-        //console.log('b');
-      video.webkitRequestFullscreen();
-    } else if(video.mozRequestFullscreen) {
-        //console.log('c');
-      video.mozRequestFullScreen();
-    } 
-}
+       if(video.requestFullscreen) {
+           //console.log('a');
+         video.requestFullscreen();
+       } else if(video.webkitRequestFullscreen) {
+           //console.log('b');
+         video.webkitRequestFullscreen();
+       }
+    }
     
 }
    
@@ -195,76 +191,93 @@ function fullscreen (){
 fullScreenButton.addEventListener('click', fullscreen);
 //fullScreenButton.addEventListener('click', fullscreen(video.src))
 
-// //KEYBOARD
-// function keyboard(e){
+
+//KEYBOARD
+
+// player.addEventListener("mouseover", e.preventDefault())
+function keyboard(e){
     
-//     e.preventDefault() //default disable
+    let a = e.prevent
+    // e.preventDefault() //default disable
     
-//     switch (e.keyCode){
-//         case 32: //' '
-//             play();
-//             break
-//         case 77: // m
-//             noVolume();
-//             break;
-//         case 75:  //k
-//             play();
-//             break;
-//         case 76: //l
-//             forward();
-//             break;  
-//         case 74: //j
-//             back();
-//             break;
-//         case 70:  //f
-//             //console.log('f')
-//             fullscreen ();
-//             break;
-//         case 190: //>
-//             if (event.shiftKey && video.playbackRate < 2) {
-//                 video.playbackRate += 0.25;
-//                 //console.log(video.playbackRate);
-//             }
-//             break;
-//         case 188: //<
-//             if (event.shiftKey && video.playbackRate >0) {
-//                 video.playbackRate -= 0.25;
-//                 //console.log(video.playbackRate);
-//             }
-//             break;
-//         case 48: //0   
-//             video.currentTime = 0;
-//             break;
-//         case 49:  //1  
-//             video.currentTime = 0.1 * video.duration;
-//             break;
-//         case 50: //2
-//             video.currentTime = 0.2 * video.duration;
-//             break;
-//         case 51: //3
-//             video.currentTime = 0.3 * video.duration;
-//             break;
-//         case 52: //4
-//             video.currentTime = 0.4 * video.duration;
-//             break;
-//         case 53: //5
-//             video.currentTime = 0.5 * video.duration;
-//             break;
-//         case 54: //6
-//             video.currentTime = 0.6 * video.duration;
-//             break;
-//         case 55: //7
-//             video.currentTime = 0.7 * video.duration;
-//             break;
-//         case 56: //7
-//             video.currentTime = 0.8 * video.duration;
-//             break;
-//         case 57: //7
-//             video.currentTime = 0.9 * video.duration;
-//             break;
-//     }
+    switch (e.keyCode){
+        case 32: //' '
+        console.log(e)
+            e.preventDefault() 
+            play();
+            break
+        case 77: // m
+            // e.preventDefault() 
+            noVolume();
+            break;
+        case 75:  //k
+            // e.preventDefault() 
+            play();
+            break;
+        case 76: //l
+            // e.preventDefault() 
+            forward();
+            break;  
+        case 74: //j
+            // e.preventDefault() 
+            back();
+            break;
+        case 70:  //f
+            // e.preventDefault() 
+            fullscreen ();
+            break;
+        case 190: //>
+            e.preventDefault() 
+            if (event.shiftKey && video.playbackRate < 2) {
+                video.playbackRate += 0.25;
+                //console.log(video.playbackRate);
+            }
+            break;
+        case 188: //<
+            e.preventDefault() 
+            if (event.shiftKey && video.playbackRate >0) {
+                video.playbackRate -= 0.25;
+                //console.log(video.playbackRate);
+            }
+            break;
+        case 48: //0  
+            
+            video.currentTime = 0;
+            break;
+        case 49:  //1  
+            
+            video.currentTime = 0.1 * video.duration;
+            break;
+        case 50: //2
+            
+            video.currentTime = 0.2 * video.duration;
+            break;
+        case 51: //3
+            
+            video.currentTime = 0.3 * video.duration;
+            break;
+        case 52: //4
+            video.currentTime = 0.4 * video.duration;
+            break;
+        case 53: //5
+            video.currentTime = 0.5 * video.duration;
+            break;
+        case 54: //6
+            video.currentTime = 0.6 * video.duration;
+            break;
+        case 55: //7
+            video.currentTime = 0.7 * video.duration;
+            break;
+        case 56: //7
+            video.currentTime = 0.8 * video.duration;
+            break;
+        case 57: //7
+            video.currentTime = 0.9 * video.duration;
+            break;
+    }
     
-// }
-// window.addEventListener("keydown", keyboard);
+}
+
+window.addEventListener("keydown", keyboard);
 
 console.log ('30/30: реализован функционал плеера, добавлены обязательные клавиши управления с клавиатуры, а также 13 клавиш YouTube: j,k,l,0,1,2,3,4,5,6,7,8,9')
