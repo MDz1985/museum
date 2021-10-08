@@ -561,6 +561,7 @@ header {
 
 .welcome-container {
   height: 100%;
+  position: relative;
 }
 
 .welcome-left {
@@ -570,7 +571,7 @@ header {
   position: relative;
   width: 598px;
   height: 388px;
-  bottom: 660px;
+  top: 149px;
 }
 .welcome-left p {
   position: relative;
@@ -591,16 +592,64 @@ header {
 }
 
 .welcome-slide-container {
+  height: 751px;
+  width: 1000px;
+  position: absolute;
+  right: 0;
+}
+
+.welcome-slide-container-box {
+  position: relative;
   height: 100%;
-  display: flex;
-  flex-direction: row-reverse;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .welcome-slide {
-  position: relative;
-  background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%), url("../assets/welcome-slider/1.jpg") no-repeat;
-  width: 1000px;
-  background-size: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 500%;
+  height: 100%;
+  display: flex;
+  transition: transform 500ms ease-in-out;
+}
+.welcome-slide div {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 20%;
+}
+
+.welcome-slide-container-box:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%);
+}
+
+.firstSlide {
+  background: url("../assets/welcome-slider/1.jpg") no-repeat;
+}
+
+.secondSlide {
+  background: url("../assets/welcome-slider/2.jpg") no-repeat;
+}
+
+.thirdSlide {
+  background: url("../assets/welcome-slider/3.jpg") no-repeat;
+}
+
+.fourthSlide {
+  background: url("../assets/welcome-slider/4.jpg") no-repeat;
+}
+
+.fifthSlide {
+  background: url("../assets/welcome-slider/5.jpg") no-repeat;
 }
 
 .discover-button {
@@ -790,6 +839,7 @@ h3::after {
 }
 
 .explore-img-container {
+  overflow: hidden;
   position: relative;
   margin-top: 15px;
   height: 700px;
@@ -803,15 +853,20 @@ h3::after {
      object-fit: cover;
   width: 440px;
 }
-.explore-img-container #slider {
-  height: 100%;
+.explore-img-container .explore-slider {
+  height: 103%;
+  bottom: 0px;
+  position: absolute;
+  width: 200%;
 }
 
-.explore-img-container::after {
-  content: url("../assets/explore-slider/explore slider.png");
-  position: absolute;
-  bottom: -3px;
-  left: 420.5px;
+.explore-old-image {
+  background: url(../assets/explore-slider/before.jpg) no-repeat;
+  height: 100%;
+  width: 61.5%;
+  position: relative;
+  max-width: 97%;
+  min-width: 3%;
 }
 
 span {
@@ -850,8 +905,29 @@ span {
 }
 
 .player {
+  height: calc(23vw + 292px);
   position: relative;
   overflow: hidden;
+}
+
+.central {
+  z-index: 1;
+  height: calc(100% - 85px);
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.central-button {
+  width: 16%;
+  height: 35%;
+  background: url(../assets/svg/player/Group.svg) no-repeat;
+  background-size: contain;
+  border: none;
 }
 
 :-webkit-full-screen video {
@@ -866,7 +942,8 @@ span {
 }
 
 .controls {
-  position: relative;
+  position: absolute;
+  bottom: 0px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -884,18 +961,6 @@ span {
 }
 .controls button:hover {
   transition: all 0.25s ease;
-}
-
-.player::before {
-  left: 42.3%;
-  top: 29.3%;
-  z-index: 1;
-  position: absolute;
-  content: "";
-  width: 16%;
-  height: 30%;
-  background: url(../assets/svg/player/Group.svg) no-repeat;
-  background-size: contain;
 }
 
 .play-button {
@@ -967,7 +1032,8 @@ span {
 .volume-slider {
   max-width: 155px;
 }
-.volume-slider div {
+
+.volume-slider_filled {
   flex-basis: 44.5%;
 }
 
