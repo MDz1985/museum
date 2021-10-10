@@ -27,7 +27,66 @@ const fifthSquare = welcomeSlideBar.querySelector('.fifth-rectangle');
 let squaresArray = [firstSquare, secondSquare, thirdSquare, fourthSquare, fifthSquare];
 let squaresNumber = 0;
 
+//SQUARES
+firstSquare.addEventListener('click', () =>{
+    while (squaresNumber > 0){
+        listSlide('left');
+    }
+})
+secondSquare.addEventListener('click', () =>{
+    if (squaresNumber > 1){
+        while (squaresNumber > 1){
+            listSlide('left');
+        }
+    }else{
+        while (squaresNumber < 1){
+            listSlide('right');
+        }
+    }
+})
+thirdSquare.addEventListener('click', () =>{
+    if (squaresNumber > 2){
+        while (squaresNumber > 2){
+            listSlide('left');
+        }
+    }else{
+        while (squaresNumber < 2){
+            listSlide('right');
+        }
+    }
+})
+fourthSquare.addEventListener('click', () =>{
+    if (squaresNumber > 3){
+        while (squaresNumber > 3){
+            listSlide('left');
+        }
+    }else{
+        while (squaresNumber < 3){
+            listSlide('right');
+        }
+    }
+})
+fifthSquare.addEventListener('click', () =>{
+    if (squaresNumber > 4){
+        while (squaresNumber > 4){
+            listSlide('left');
+        }
+    }else{
+        while (squaresNumber < 4){
+            listSlide('right');
+        }
+    }
+})  
 
+        
+    
+    
+    
+
+      
+
+
+//ARRROWS
 rightArrow.addEventListener('click', () =>{
     if (timer == true) { 
         listSlide('right');
