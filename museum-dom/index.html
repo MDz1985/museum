@@ -9,6 +9,32 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/welcome.css"> -->
     <link rel="icon" href="assets/favicon.png" type="image/png">
+
+
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+      /* body { 
+        margin: 0; 
+        padding: 0; 
+      } */
+      #map { 
+        position: relative; 
+        top: 0; 
+        bottom: 0; 
+        width: 100%; 
+      }
+    </style>
+
+
+
+
+
+
+
+
+
+
     
 </head>
 <body>
@@ -249,6 +275,8 @@
                             <div class = "progress volume-slider">
                                 <div class = "progress_filled volume-slider_filled">
                                 </div>
+
+                                
                             </div>
                             <!-- <input type="range" name="volume" class="volumeSlider" min="0" max="1" step="0.05" value="1"> -->
                                 
@@ -550,6 +578,36 @@
                         <!-- <p>address:75001 Paris, France <br> phone:+33(0) 1 40 20 50 50 <br> mail:info@louvre.fr</p> -->
                     </div>
                     <div class= "map-image"> 
+
+
+
+
+                        <div id='map'></div>
+                            <script>
+                            // The value for 'accessToken' begins with 'pk...'
+                            mapboxgl.accessToken = 'pk.eyJ1IjoibWR6MTk4NSIsImEiOiJja3VsYjA2OWQwaHA5Mm9tb2kzNnJ6Ym9uIn0.yW7z3LzVxjagAFn5xNK4nA'; 
+                            const map = new mapboxgl.Map({
+                              container: 'map',
+                              // Replace YOUR_STYLE_URL with your style URL.
+                              style: 'mapbox://styles/mdz1985/ckul5us6f3l2r17mnrzeylxxx', 
+                              center: [2.3364, 48.86091],
+                              zoom: 15
+                            });
+                            // Code from the next step will go here.
+                            
+                            </script>
+
+
+
+
+
+
+
+
+
+
+
+
                         <!-- <img src="assets/img/Map.png" alt="Map"> -->
                     </div>
 
