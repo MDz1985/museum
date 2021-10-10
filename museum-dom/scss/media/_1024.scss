@@ -34,7 +34,7 @@
     .welcome-left {
         width: 445px;
         height: 343px;
-        bottom: 536px;
+        top: 52px;
         p{
             font-size: 24px;
             line-height: 28px;
@@ -144,10 +144,16 @@
         height:calc(70vw + 285px);
     }
     
-    .video {
-        height: 43.5vw;
-        background: transparent url("../assets/video-slides/poster.jpg") 50% 50% / cover no-repeat;
+    .central{
+        height: calc(100% - 61px);
     }
+    .player{
+        height: calc(50vw - 7px);
+    }
+    // .video {
+    //     height: 43.5vw;
+    //     background: transparent url("../assets/video-slides/poster.jpg") 50% 50% / cover no-repeat;
+    // }
 
     .video-text {
         margin-bottom: 32px;
@@ -181,7 +187,7 @@
         }
     }
     .volume-button{
-        padding-right: 25px;
+        height: 20px;
     }
 
     .video-library {

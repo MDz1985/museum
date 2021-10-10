@@ -46,6 +46,53 @@ leftArrow.addEventListener('click', () =>{
         }
 })
 
+
+let direction = '';
+function swipe(e) {
+    
+   
+    if (e.movementX > 0){
+        direction = 'left';
+            
+            
+        
+    } else if (e.movementX < 0){
+       direction = 'right';
+        
+    } else {return;}
+
+    if (timer == true) { 
+        listSlide(direction);
+        direction = '' ;  
+        timer = false; 
+        timeOut();   
+        }
+    
+    
+    
+    
+    // progressBar.style.flexBasis = String(e.offsetX/progress.offsetWidth*100) + '%';
+    // video.currentTime = (e.offsetX / progress.offsetWidth) * video.duration;
+}
+    
+
+ 
+// slidesBox.addEventListener("mousemove", swipe);
+
+
+
+slidesBox.addEventListener("mousedown", function(e){
+    
+    swipe(e); 
+    this.addEventListener("mousemove", swipe);
+});
+
+slidesBox.addEventListener("mouseup", function(e){
+    
+    this.removeEventListener("mousemove", swipe);
+});
+    
+
 function listSlide(direction) {
     if (direction === 'right') {
        
@@ -93,10 +140,10 @@ function listSlide(direction) {
     const height = document.querySelector('.container').clientHeight;
 
     if (slideIndex < 0) {
-        slides.style.transform = `translateX(${Math.abs(slideIndex) * width}px)`;
+        slides.style.transform = `translateX(${Math.abs(slideIndex) * 100 / 7}%)`;
           
     } else{
-        slides.style.transform = `translateX(-${slideIndex * width}px)`;
+        slides.style.transform = `translateX(-${slideIndex * 100 / 7}%)`;
         
     }
 }

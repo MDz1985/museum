@@ -9,12 +9,12 @@
     display: flex;
     flex-flow:row wrap;
     justify-content: center;
-    div{
-        display: flex;
-        flex-direction: column; 
+    // div{
+    //     display: flex;
+    //     flex-direction: column; 
         
         
-    }
+    // }
 }
 
 .explore-text-container{
@@ -66,6 +66,7 @@
 }
 .explore-old-image{
     background: url(../assets/explore-slider/before.jpg) no-repeat;
+    background-size: cover;
     height: 100%;
     width: 61.5%;
     position: relative;

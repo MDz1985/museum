@@ -2,7 +2,7 @@
      //GLOBAL
      .section-title {
         font-size: 40px;
-        line-height: 60px;
+        line-height: calc(6vw + 15px);
 
     }
     
@@ -25,16 +25,17 @@
         height: 112.2vw;
     }
     
-    .welcome-container {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
+    // .welcome-container {
+    //     display: flex;
+    //     flex-direction: column-reverse;
+    //     align-items: center;
+    // }
 
     .welcome-left{
-        margin-bottom: 35px;
-        height: 242px;
-        bottom: 0px;
+        position: absolute;
+        height: calc(12% + 80px);
+        top: 0px;
+        width: 100%;
         align-items: center;
         text-align: center;
         p{
@@ -47,14 +48,17 @@
         display: none;
     }
 
+    .welcome-slide-container-box:after{
+        display: none;
+    }
+
+
     .welcome-slide-container{
+        height: 62.5%;
         width: 100%;
+        bottom: 12%;
     }
-    .welcome-slide{
-        width: 100%;
-        background:url("../assets/welcome-slider/1.jpg") no-repeat;
-        background-size: contain;
-    }
+    
 
     .welcome-panel-container{
         height: 13vw;
@@ -173,27 +177,34 @@
         row-gap: 20px;
     }
 
-    .player::before {
-        left: 44.3%;
-        top: 32.3%;
-        width: 11%;
-        height: 24%;
+    .player {
+        height: calc(50vw + 1px);
+    }
+    // .player::before {
+    //     left: 44.3%;
+    //     top: 32.3%;
+    //     width: 11%;
+    //     height: 24%;
+    // }
+    .central-button {
+        width: 12%;
+        height: 25%;
     }
 
     .controls{
         height: 53px;
-        padding-left: 30px;
+        padding-left: 24px;
         gap: 0;
     }
 
-    .play-button{
-        padding-right: 30px;
-    }
+    // .play-button{
+    //     padding-right: 30px;
+    // }
 
     .progress-slider {
         position: absolute;
         left: 0;
-        top: -6px;
+        top: -4px;
         width: 100%;
     }
 
@@ -219,10 +230,10 @@
             flex-basis: 40%;
         }
     }
-    .volume-button{
-        padding-left: 15px;
-        height: 22px;
-    }
+    // .volume-button{
+    //     padding-left: 15px;
+    //     height: 22px;
+    // }
 
     .fullscreen-button{
         height: 27px;

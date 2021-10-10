@@ -13,15 +13,15 @@ const volume = player.querySelector('.volume-slider');
 const video = player.querySelector('.video');
 // const progressBar = player.querySelector('.progress_filled');
 // const progress =player.querySelector('.progress')
-const playButton = player.querySelector('.play-button');
+const playButton = player.querySelector('.play-icon');
 const playCentral = player.querySelector('.central-button');
 const centralVideo = player.querySelector('.central')
 // const backButton = player.querySelector('.backButton');
 // const fowardButton = player.querySelector('.forwardButton');
 // const volumeSlider = player.querySelector('.volumeSlider')    !!!!!
-const volumeButton = player.querySelector('.volume-button')
-const volumeIcon = document.getElementById('volumeIcon')
-const playIcon = document.getElementById('playIcon')
+const volumeButton = player.querySelector('.volume-icon')
+// const volumeIcon = document.getElementById('volumeIcon')
+// const playIcon = document.getElementById('playIcon')
 const fullScreenButton = player.querySelector('.fullscreen-button')
 
 video.volume = 0.44;
@@ -34,6 +34,7 @@ video.volume = 0.44;
 
 
 //PLAY
+let playStatus = 'play';
 function play() {
     const method = video.paused ? 'play' : 'pause';
     video[method]();
@@ -43,21 +44,34 @@ function play() {
 // );
     if (video.paused){
         playCentral.style.display = 'block';
-        centralVideo.style.zIndex = '1';
-        playButton.style.background = `url('assets/svg/player/play.svg')no-repeat`
+        // centralVideo.style.zIndex = '1';
+        playButton.src = 'assets/svg/player/play.svg'
+        playStatus = 'play';
+        // playButton.style.background = `url('assets/svg/player/play.svg')no-repeat`
     }
     else {
         playCentral.style.display = 'none';
-        centralVideo.style.zIndex = '0';
+        // centralVideo.style.zIndex = '0';
+        playStatus = 'pause';
         
-    playButton.style.background = `url('assets/svg/player/pause.svg')no-repeat`
+    // playButton.style.background = `url('assets/svg/player/pause.svg')no-repeat`
+        playButton.src = 'assets/svg/player/pause.svg'
     
     }
 }
 playButton.addEventListener('click', play);
-playCentral.addEventListener('click', play);
+playButton.addEventListener('mouseover', playHover);
+playButton.addEventListener('mouseout', playHoverOut);
+function playHover(){
+    playButton.src = 'assets/svg/player/'+ playStatus + 'Hover.svg';
+}
+function playHoverOut(){
+    playButton.src = 'assets/svg/player/'+ playStatus + '.svg';
+    console.log(playStatus);
+}
+// playCentral.addEventListener('click', play);
 
-video.addEventListener('click', play);
+centralVideo.addEventListener('click', play);
 
 
 
@@ -69,7 +83,12 @@ video.addEventListener('click', play);
 function progressFunc() {
   progressBar.style.flexBasis = `${(video.currentTime / video.duration) * 100}%`;
   if (video.currentTime === video.duration) {
-    // playIcon.src = 'svg/play.svg'; 
+    video.pause();
+    // play();
+    video.currentTime = 0;
+    playButton.src = 'assets/svg/player/play.svg';
+    playCentral.style.display = 'block';
+    playStatus = 'play';
 }
 }
 
@@ -103,7 +122,7 @@ progress.addEventListener("mouseup", function(e){
 
 //VOLUME BUTTON
 
-
+let volumeStatus = 'volume';
 let prevVolume = 0.01;
 
 function noVolume() {
@@ -112,17 +131,28 @@ if (video.volume > 0){
     prevVolume = video.volume;
     video.volume = 0;
     volumeBar.style.flexBasis = '0%';
-    volumeButton.style.background  = `url('assets/svg/player/mute.svg')`;
+    volumeButton.src = 'assets/svg/player/mute.svg';
+    volumeStatus = 'mute';
+    // volumeButton.style.background  = `url('assets/svg/player/mute.svg')`;
 } else {
     volumeBar.style.flexBasis = String(prevVolume*100) + '%';
     video.volume = prevVolume;
-    volumeButton.style.background = `url('assets/svg/player/volume.svg')`;
+    volumeButton.src = 'assets/svg/player/volume.svg'
+    volumeStatus = 'volume';
+    // volumeButton.style.background = `url('assets/svg/player/volume.svg')`;
     prevVolume = 0.01;
 }
     
 }
 volumeButton.addEventListener('click', noVolume)
-
+volumeButton.addEventListener('mouseover', volumeHover);
+volumeButton.addEventListener('mouseout', volumeHoverOut);
+function volumeHover(){
+    volumeButton.src = 'assets/svg/player/'+ volumeStatus + 'Hover.svg';
+}
+function volumeHoverOut(){
+    volumeButton.src = 'assets/svg/player/'+ volumeStatus + '.svg';
+}
 
 
 
@@ -138,12 +168,14 @@ function moveVolume(e) {
         video.volume = Math.floor(100 * e.offsetX / volume.offsetWidth) / 100;
     }
     if (video.volume === 0) {
-        volumeButton.style.background  = `url('assets/svg/player/mute.svg')`;
+        volumeButton.src = 'assets/svg/player/mute.svg'
+        // volumeButton.style.background  = `url('assets/svg/player/mute.svg')`;
     } else {
-        volumeButton.style.background = `url('assets/svg/player/volume.svg')`;
+        volumeButton.src = 'assets/svg/player/volume.svg'
+        // volumeButton.style.background = `url('assets/svg/player/volume.svg')`;
     }
     
-        console.log(video.volume)   
+        // console.log(video.volume)   
 
 }
 
