@@ -152,6 +152,36 @@ slidesBox.addEventListener("mouseup", function(e){
 });
     
 
+
+
+function myFunction(event) {
+    var y = event.deltaY;
+    if (y < 0){
+        if (timer == true) { 
+        listSlide('left');
+        timer = false; 
+        timeOut();   
+        }
+    } else if (y > 0){
+        if (timer == true) { 
+            listSlide('right');
+            timer = false; 
+            timeOut();   
+        }
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
 function listSlide(direction) {
     if (direction === 'right') {
        
