@@ -3,6 +3,7 @@ const progressBar = player.querySelector('.progress-slider_filled');
 const progress = player.querySelector('.progress-slider')
 const volumeBar = player.querySelector('.volume-slider_filled');
 const volume = player.querySelector('.volume-slider');
+const message = player.querySelector('.video-message');
 
 
 
@@ -262,6 +263,11 @@ function keyboard(e){
             e.preventDefault() 
             if (event.shiftKey && video.playbackRate < 2) {
                 video.playbackRate += 0.25;
+                message.innerText = String(video.playbackRate);
+                message.style.zIndex = '1';
+                timeOut();
+                // message.style.zIndex = '0';
+
                 //console.log(video.playbackRate);
             }
             break;
@@ -269,6 +275,9 @@ function keyboard(e){
             e.preventDefault() 
             if (event.shiftKey && video.playbackRate >0) {
                 video.playbackRate -= 0.25;
+                message.innerText = String(video.playbackRate);
+                message.style.zIndex = '1';
+                timeOut();
                 //console.log(video.playbackRate);
             }
             break;
@@ -311,5 +320,9 @@ function keyboard(e){
 }
 
 window.addEventListener("keydown", keyboard);
+
+function timeOut() {
+    setTimeout(function() {message.style.zIndex = '0';}, 1000);
+}
 
 console.log ('30/30: реализован функционал плеера, добавлены обязательные клавиши управления с клавиатуры, а также 13 клавиш YouTube: j,k,l,0,1,2,3,4,5,6,7,8,9')

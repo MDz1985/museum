@@ -927,6 +927,15 @@ span {
   border: none;
 }
 
+.video-message {
+  z-index: 0;
+  position: absolute;
+  left: 20px;
+  bottom: 150px;
+  font-size: 30px;
+  transition: z-index 0.5s ease-in-out;
+}
+
 :-webkit-full-screen video {
   width: 100%;
   height: 100%;
