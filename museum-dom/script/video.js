@@ -222,12 +222,12 @@ function fullscreen (){
    
    
 fullScreenButton.addEventListener('click', fullscreen);
-//fullScreenButton.addEventListener('click', fullscreen(video.src))
+
 
 
 //KEYBOARD
 
-// player.addEventListener("mouseover", e.preventDefault())
+
 function keyboard(e){
     
     let a = e.prevent
@@ -260,25 +260,25 @@ function keyboard(e){
             fullscreen ();
             break;
         case 190: //>
-            e.preventDefault() 
+            // e.preventDefault() 
             if (event.shiftKey && video.playbackRate < 2) {
                 video.playbackRate += 0.25;
                 message.innerText = String(video.playbackRate);
                 message.style.zIndex = '1';
-                timeOut();
+                timeOut1();
                 // message.style.zIndex = '0';
 
                 //console.log(video.playbackRate);
             }
             break;
         case 188: //<
-            e.preventDefault() 
+            // e.preventDefault() 
             if (event.shiftKey && video.playbackRate >0) {
                 video.playbackRate -= 0.25;
                 message.innerText = String(video.playbackRate);
                 message.style.zIndex = '1';
-                timeOut();
-                //console.log(video.playbackRate);
+                timeOut1();
+                
             }
             break;
         case 48: //0  
@@ -321,7 +321,7 @@ function keyboard(e){
 
 window.addEventListener("keydown", keyboard);
 
-function timeOut() {
+function timeOut1() {
     setTimeout(function() {message.style.zIndex = '0';}, 1000);
 }
 
