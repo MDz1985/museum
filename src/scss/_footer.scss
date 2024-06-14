@@ -1,0 +1,114 @@
+.footer{ 
+    position: relative;
+    height: 392px;
+    background: var(--bg-dark);
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 75px 0 51px 0;
+}
+    
+.footer::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 263px;
+    background: #666666;
+}
+
+.footer-container {
+    height: 140px;
+    // display: grid;
+    // grid-template-rows: 140px auto;
+    // grid-template-columns: auto 340px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer-left-block{
+    display: flex;
+    // width: calc(40% + 261px);
+    width: calc(30% + 269px);
+    justify-content: space-between;
+    padding-top: 9px;
+}
+
+.footer-logo-container{
+    
+    min-width: 180px;
+    
+}
+
+.footer-menu-container{
+    display: block;
+    width: 360px;
+    height: 128px;
+    align-self: flex-end;
+    // transform: translateX(-36%);
+    // margin-right: 254px;
+    ul{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        height: 100%;
+        gap: 25px;
+    }
+}
+
+.footer-social{
+    align-self: flex-end; 
+    display: flex; 
+    width: 340px; 
+    height: 48px; 
+    justify-content: space-between;
+    margin-bottom: 5px;
+    flex-flow: row wrap;
+        li{
+            
+            width: 48px;
+            height: 48px;
+            border: 1px solid #666666;
+            filter: drop-shadow(0px 0px 0px #666666);
+            border-radius: 50px;
+        }
+        a{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+        }
+        li:hover path{
+            fill: #9D8665;
+        }
+        li:hover{
+            border-color: #9D8665;
+        }
+}
+
+.footer-info{
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    span{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 22px;
+        line-height: 22px;
+        color: white;
+        letter-spacing: 2px;
+    }
+}
+
+.rss{
+    transform: translateX(12px);
+}

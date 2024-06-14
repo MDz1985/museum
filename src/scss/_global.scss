@@ -1,0 +1,119 @@
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+  
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+  
+:root {
+    --bg-dark: #030303;
+    --dark-red: #710707;
+    --font-gold: #9d8665;
+    --font1: 80px;
+    --font2: 32px;
+    --font3: 28px;
+}
+  /* roboto-100 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    src: local(''),
+         url('../assets/fonts/roboto-v27-latin-100.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../assets/fonts/roboto-v27-latin-100.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+  /* roboto-300 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+         url('../assets/fonts/roboto-v27-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../assets/fonts/roboto-v27-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../assets/fonts/roboto-v29-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../assets/fonts/roboto-v29-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+  /* roboto-500 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../assets/fonts/roboto-v27-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../assets/fonts/roboto-v27-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../assets/fonts/roboto-v29-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../assets/fonts/roboto-v29-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+  /* forum-regular - latin */
+@font-face {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../assets/fonts/forum-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../assets/fonts/forum-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+   
+  
+body{margin: 0;}
+  
+*{
+    font-family: 'Roboto';
+}
+  
+
+
+h3{font-family: robotoregular;}
+
+li{list-style: none;
+}
+
+a {text-decoration: none;
+  font: 22px 'Roboto';
+  font-weight: 100;
+  /* line-height: 50px; */
+  letter-spacing: 2px;
+  color: white;
+}
+li a:hover {
+  transition: all 0.1s linear;
+  color: var(--font-gold);
+}
+
+li a:active{
+  // transition: all 0.1s linear;
+  color: var(#7E6C51);
+}
+
+h1, h5{font: 28px "Forum";color: white;text-transform: uppercase;font-size: 28px;line-height: 50px;letter-spacing: 5px;}
+
+
+.border-title{
+  position: relative;
+}
+
+.border-title::after {
+  content: "";
+  position: absolute;
+  bottom: -27px;
+  left: 0px;
+  right: 0px;
+  height: 3px;
+  background-color: var(--dark-red);
+}

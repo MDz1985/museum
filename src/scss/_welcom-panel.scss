@@ -1,0 +1,66 @@
+.welcome-panel-container{
+    height: 120px;
+    display: flex;
+    flex-direction: row-reverse;
+    transform: translate(0, -100%);
+}
+
+.slide-panel,.slide-panel div{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.slide-panel{
+    
+    height: 100%;
+    width: 600px;
+    background-color: #030303;
+    display: flex;
+    align-items: center;
+    padding: 0 74px;
+    span{
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 40px;
+        letter-spacing: 0.2px;
+        text-transform: uppercase;
+        color: white;
+    }
+}
+
+.slide-numbers{
+    width: 76px;
+}
+
+.welcome-selection{
+    // display: flex;
+    // flex-flow: row nowrap;
+    // justify-content: space-between;
+    width: 180px;
+}
+
+.first-rectangle{
+    fill: #D2B183;
+}
+
+.welcome-arrows{
+    // display: flex;
+    // justify-content: space-between;
+    // 
+    margin-left: 6px;
+    width: 80px;
+    // svg path{
+    //     height: 30px;
+    // }
+    svg:hover{
+        path{
+        fill: var(--font-gold);
+        }
+        cursor: pointer;
+    }   
+}
+
