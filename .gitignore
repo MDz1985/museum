@@ -103,28 +103,13 @@ dist
 # TernJS port file
 .tern-port
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> a186b2cd37098f48601b89ae4f821949bfb753b7
 # DS_Store
 .DS_Store
 museum/.DS_Store
-.DS_Store
 
 
 # DS_Store file
 *.DS_Store
 ._*
-<<<<<<< HEAD
->>>>>>> gh-pages
-=======
-# DS_Store file
-*.DS_Store
-._*
->>>>>>> main
-=======
 
->>>>>>> a186b2cd37098f48601b89ae4f821949bfb753b7
+.idea
